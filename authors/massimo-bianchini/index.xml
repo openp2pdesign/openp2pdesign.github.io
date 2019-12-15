@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Massimo Bianchini | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/massimo-bianchini/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/massimo-bianchini/index.xml" rel="self" type="application/rss+xml" />
+    <description>Massimo Bianchini</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Massimo Bianchini</title>
+      <link>https://openp2pdesign.github.io/authors/massimo-bianchini/</link>
+    </image>
+    
+    <item>
+      <title>Exploring collaborative processes between maker laboratories, designers and companies moving from 3rd to 4th industrial revolution</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/bianchini-exploring-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/bianchini-exploring-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Makers as a new work condition between self-employment and community peer-production. Insights from a survey on Makers in Italy</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-makers-2017/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-makers-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Makers&#39; Inquiry. Un&#39;indagine socioeconomica sui makers italiani e su Make in Italy</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/bianchini-makers-2015/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/bianchini-makers-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing and Making: What Could Change in Design Schools. A first Systemic Overview of Makers in Italy and Their Educational Contexts</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-designing-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-designing-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

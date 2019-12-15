@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Design | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/tags/open-design/</link>
+      <atom:link href="https://openp2pdesign.github.io/tags/open-design/index.xml" rel="self" type="application/rss+xml" />
+    <description>Open Design</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Open Design</title>
+      <link>https://openp2pdesign.github.io/tags/open-design/</link>
+    </image>
+    
+    <item>
+      <title>A data-driven approach for understanding Open Design. Mapping social interactions in collaborative processes on GitHub</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-data-driven-2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-data-driven-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Massimo Menichinelli - Process, Community, Business: The Systems Behind Open Design</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/fad-barcelona-massimo-2013/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/fad-barcelona-massimo-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

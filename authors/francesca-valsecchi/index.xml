@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Francesca Valsecchi | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/francesca-valsecchi/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/francesca-valsecchi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Francesca Valsecchi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Francesca Valsecchi</title>
+      <link>https://openp2pdesign.github.io/authors/francesca-valsecchi/</link>
+    </image>
+    
+    <item>
+      <title>The meta-design of systems: how design, data and software enable the organizing of open, distributed, and collaborative processes</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-meta-design-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-meta-design-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Le comunità del Free Software come organizzazioni complesse.</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-comunita-2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-comunita-2007/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

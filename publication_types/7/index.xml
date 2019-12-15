@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7 | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/publication_types/7/</link>
+      <atom:link href="https://openp2pdesign.github.io/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
+    <description>7</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>7</title>
+      <link>https://openp2pdesign.github.io/publication_types/7/</link>
+    </image>
+    
+    <item>
+      <title>Reti collaborative: il design per un&#39;auto-organizzazione open peer-to-peer</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-reti-2006/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-reti-2006/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

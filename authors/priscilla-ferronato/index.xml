@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Priscilla Ferronato | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/priscilla-ferronato/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/priscilla-ferronato/index.xml" rel="self" type="application/rss+xml" />
+    <description>Priscilla Ferronato</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Sun, 15 Dec 2019 17:58:01 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Priscilla Ferronato</title>
+      <link>https://openp2pdesign.github.io/authors/priscilla-ferronato/</link>
+    </image>
+    
+    <item>
+      <title>Mapping strategies for distributed, social and collaborative design systems of makers, designers and social entrepreneurs</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-mapping-nodate/</link>
+      <pubDate>Sun, 15 Dec 2019 17:58:01 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-mapping-nodate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Decentralization Turns in Design: An Exploration Through the Maker Movement</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-decentralization-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-decentralization-2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beno Juarez | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/beno-juarez/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/beno-juarez/index.xml" rel="self" type="application/rss+xml" />
+    <description>Beno Juarez</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Beno Juarez</title>
+      <link>https://openp2pdesign.github.io/authors/beno-juarez/</link>
+    </image>
+    
+    <item>
+      <title>The Fab Lab Life Cycle Report of the FAB10 Workshops</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/van-der-hijden-fab-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/van-der-hijden-fab-2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

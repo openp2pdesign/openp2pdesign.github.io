@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAD Barcelona | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/fad-barcelona/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/fad-barcelona/index.xml" rel="self" type="application/rss+xml" />
+    <description>FAD Barcelona</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>FAD Barcelona</title>
+      <link>https://openp2pdesign.github.io/authors/fad-barcelona/</link>
+    </image>
+    
+    <item>
+      <title>Massimo Menichinelli - Process, Community, Business: The Systems Behind Open Design</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/fad-barcelona-massimo-2013/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/fad-barcelona-massimo-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

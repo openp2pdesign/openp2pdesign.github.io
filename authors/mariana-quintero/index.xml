@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mariana Quintero | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/mariana-quintero/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/mariana-quintero/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mariana Quintero</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Mariana Quintero</title>
+      <link>https://openp2pdesign.github.io/authors/mariana-quintero/</link>
+    </image>
+    
+    <item>
+      <title>Fab City Dashboard v0.1</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/menichinelli-fab-2016-1/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/menichinelli-fab-2016-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

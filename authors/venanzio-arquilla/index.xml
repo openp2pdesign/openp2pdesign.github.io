@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Venanzio Arquilla | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/venanzio-arquilla/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/venanzio-arquilla/index.xml" rel="self" type="application/rss+xml" />
+    <description>Venanzio Arquilla</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Venanzio Arquilla</title>
+      <link>https://openp2pdesign.github.io/authors/venanzio-arquilla/</link>
+    </image>
+    
+    <item>
+      <title>Exploring collaborative processes between maker laboratories, designers and companies moving from 3rd to 4th industrial revolution</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/bianchini-exploring-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/bianchini-exploring-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

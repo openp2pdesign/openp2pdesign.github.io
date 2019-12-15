@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kasper Birkeholm Munk | openp2pdesign.org</title>
+    <link>https://openp2pdesign.github.io/authors/kasper-birkeholm-munk/</link>
+      <atom:link href="https://openp2pdesign.github.io/authors/kasper-birkeholm-munk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kasper Birkeholm Munk</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019 Creative Commons - BY</copyright><lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://openp2pdesign.github.io/img/icon-192.png</url>
+      <title>Kasper Birkeholm Munk</title>
+      <link>https://openp2pdesign.github.io/authors/kasper-birkeholm-munk/</link>
+    </image>
+    
+    <item>
+      <title>D4.1 Innovation Action Report</title>
+      <link>https://openp2pdesign.github.io/publication/content/publication/devoldere-d-4-1-2017/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://openp2pdesign.github.io/publication/content/publication/devoldere-d-4-1-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
