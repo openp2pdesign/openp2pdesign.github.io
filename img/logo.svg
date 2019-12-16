@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="logo.png"
+   width="400"
+   height="100"
+   id="svg4000"
+   sodipodi:version="0.32"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
+   version="1.0"
+   sodipodi:docname="logo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4002">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3292"
+       id="radialGradient4734"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.3939394,0,899.82524)"
+       cx="520.77686"
+       cy="1484.7117"
+       fx="520.77686"
+       fy="1484.7117"
+       r="11.137808" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3292">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3294" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3296" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1892">
+      <stop
+         id="stop1894"
+         offset="0"
+         style="stop-color:#8dbcdf;stop-opacity:1;" />
+      <stop
+         id="stop1896"
+         offset="1"
+         style="stop-color:white;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1902">
+      <stop
+         id="stop1904"
+         offset="0"
+         style="stop-color:#ffa72b;stop-opacity:1;" />
+      <stop
+         id="stop1906"
+         offset="1"
+         style="stop-color:white;stop-opacity:1;" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : -273.81891 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : -273.81891 : 1"
+       inkscape:persp3d-origin="372.04724 : -449.21261 : 1"
+       id="perspective4008" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="797"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="0"
+     inkscape:document-rotation="0">
+    <sodipodi:guide
+       orientation="0,1"
+       position="786.85396,1.0312634"
+       id="guide3126" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4005">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.59273713,0,0,0.59273713,16.21297,-39.586764)"
+       id="g860">
+      <g
+         style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+         id="text4722"
+         aria-label="openp2pdesign">
+        <path
+           id="path862"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 57.00171,156.9508 c 0,8.26 6.37,12.74 14.84,12.74 8.47,0 14.84,-4.48 14.84,-12.74 v -11.41 c 0,-8.26 -6.37,-12.74 -14.84,-12.74 -8.47,0 -14.84,4.48 -14.84,12.74 z m 8.4,-1.12 v -9.24 c 0,-4.34 2.31,-6.58 6.44,-6.58 3.99,0 6.44,2.24 6.44,6.58 v 9.24 c 0,4.34 -2.45,6.65 -6.44,6.65 -4.13,0 -6.44,-2.31 -6.44,-6.65 z" />
+        <path
+           id="path864"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 103.36577,167.6608 c 2.1,1.4 4.48,2.03 7,2.03 7.56,0 13.58,-4.69 13.58,-12.74 v -11.83 c 0,-8.19 -5.6,-12.32 -11.34,-12.32 -4.2,0 -7.77,2.45 -9.24,6.37 l -2.24,-5.6 -0.56,-0.42 -6.789998,0.91 -0.42,0.56 2.03,7.14 v 42.28 l 0.49,0.49 7.419998,-0.98 0.49,-0.49 v -11.76 z m 0.42,-10.99 v -15.82 c 1.68,-0.42 4.34,-1.05 5.53,-1.05 3.36,0 6.23,1.96 6.23,6.79 v 9.31 c 0,4.34 -2.52,6.58 -5.95,6.58 -3.78,0 -5.81,-1.96 -5.81,-5.81 z" />
+        <path
+           id="path866"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 131.23999,156.9508 c 0,8.4 5.6,12.74 15.12,12.74 6.44,0 11.9,-3.01 14,-8.33 l -0.35,-0.63 -6.51,-2.1 -0.63,0.35 c -1.33,2.17 -3.22,3.5 -6.79,3.5 -3.92,0 -6.44,-2.1 -6.44,-7.14 v -1.75 l -0.49,-3.36 c 1.89,3.22 5.39,4.55 8.75,4.55 6.02,0 11.62,-3.92 11.62,-10.92 0,-5.25 -3.57,-11.06 -13.58,-11.06 -8.75,0 -14.7,4.83 -14.7,12.95 z m 8.4,-9.8 v -0.63 c 0,-4.34 2.24,-6.44 6.09,-6.44 3.64,0 5.18,1.75 5.18,3.5 0,3.57 -2.73,4.48 -6.3,4.48 -1.82,0 -3.99,-0.35 -4.97,-0.91 z" />
+        <path
+           id="path868"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 168.12015,168.3608 0.49,0.49 h 7.42 l 0.49,-0.49 v -27.51 c 1.68,-0.42 4.9,-1.05 6.09,-1.05 3.36,0 6.09,1.96 6.09,6.79 v 21.77 l 0.49,0.49 h 7.42 l 0.49,-0.49 v -23.24 c 0,-8.19 -5.46,-12.32 -11.2,-12.32 -4.2,0 -8.33,2.45 -9.8,6.37 l -2.24,-5.6 -0.56,-0.42 -6.79,0.91 -0.42,0.56 2.03,7.14 z" />
+        <path
+           id="path870"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 214.79155,167.6608 c 2.1,1.4 4.48,2.03 7,2.03 7.56,0 13.58,-4.69 13.58,-12.74 v -11.83 c 0,-8.19 -5.6,-12.32 -11.34,-12.32 -4.2,0 -7.77,2.45 -9.24,6.37 l -2.24,-5.6 -0.56,-0.42 -6.79,0.91 -0.42,0.56 2.03,7.14 v 42.28 l 0.49,0.49 7.42,-0.98 0.49,-0.49 v -11.76 z m 0.42,-10.99 v -15.82 c 1.68,-0.42 4.34,-1.05 5.53,-1.05 3.36,0 6.23,1.96 6.23,6.79 v 9.31 c 0,4.34 -2.52,6.58 -5.95,6.58 -3.78,0 -5.81,-1.96 -5.81,-5.81 z" />
+        <path
+           id="path872"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 245.32577,168.3608 0.49,0.49 h 27.09 l 0.63,-0.35 1.68,-6.23 -0.35,-0.56 h -15.33 l 4.06,-2.38 c 0,0 9.94,-6.23 9.94,-15.12 0,-10.01 -7.63,-13.51 -14.77,-13.51 -10.85,0 -16.1,8.26 -16.1,8.26 l 0.07,0.7 5.32,3.64 0.77,-0.07 c 0,0 4.2,-5.04 9.52,-5.04 3.22,0 6.37,1.61 6.37,6.3 0,8.05 -14.07,16.38 -20.37,19.32 z" />
+        <path
+           id="path874"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 292.17437,167.6608 c 2.1,1.4 4.48,2.03 7,2.03 7.56,0 13.58,-4.69 13.58,-12.74 v -11.83 c 0,-8.19 -5.6,-12.32 -11.34,-12.32 -4.2,0 -7.77,2.45 -9.24,6.37 l -2.24,-5.6 -0.56,-0.42 -6.79,0.91 -0.42,0.56 2.03,7.14 v 42.28 l 0.49,0.49 7.42,-0.98 0.49,-0.49 v -11.76 z m 0.42,-10.99 v -15.82 c 1.68,-0.42 4.34,-1.05 5.53,-1.05 3.36,0 6.23,1.96 6.23,6.79 v 9.31 c 0,4.34 -2.52,6.58 -5.95,6.58 -3.78,0 -5.81,-1.96 -5.81,-5.81 z" />
+        <path
+           id="path876"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 320.11858,157.3708 c 0,8.19 5.6,12.32 11.34,12.32 4.2,0 7.77,-2.45 9.24,-6.37 l 2.24,5.6 0.56,0.42 6.79,-0.91 0.42,-0.56 -2.03,-7.14 v -42.98 l -0.49,-0.49 -7.42,0.98 -0.49,0.49 v 12.46 l 0.42,3.64 c -2.1,-1.4 -4.48,-2.03 -7,-2.03 -7.56,0 -13.58,4.69 -13.58,12.74 z m 8.4,-1.47 v -9.31 c 0,-4.34 2.52,-6.58 5.95,-6.58 3.78,0 5.81,1.96 5.81,5.81 v 15.82 c -1.68,0.42 -4.34,1.05 -5.53,1.05 -3.36,0 -6.23,-1.96 -6.23,-6.79 z" />
+        <path
+           id="path878"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 357.50952,156.9508 c 0,8.4 5.6,12.74 15.12,12.74 6.44,0 11.9,-3.01 14,-8.33 l -0.35,-0.63 -6.51,-2.1 -0.63,0.35 c -1.33,2.17 -3.22,3.5 -6.79,3.5 -3.92,0 -6.44,-2.1 -6.44,-7.14 v -1.75 l -0.49,-3.36 c 1.89,3.22 5.39,4.55 8.75,4.55 6.02,0 11.62,-3.92 11.62,-10.92 0,-5.25 -3.57,-11.06 -13.58,-11.06 -8.75,0 -14.7,4.83 -14.7,12.95 z m 8.4,-9.8 v -0.63 c 0,-4.34 2.24,-6.44 6.09,-6.44 3.64,0 5.18,1.75 5.18,3.5 0,3.57 -2.73,4.48 -6.3,4.48 -1.82,0 -3.99,-0.35 -4.97,-0.91 z" />
+        <path
+           id="path880"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 392.14968,165.7708 c 3.22,2.38 7.7,3.92 12.25,3.92 7.42,0 14,-2.59 14,-11.2 0,-7.21 -6.09,-9.03 -11.27,-10.5 -3.22,-0.91 -6.16,-1.82 -6.16,-4.2 0,-2.38 2.38,-3.78 5.67,-3.78 2.94,0 6.09,2.24 6.09,2.24 l 0.63,-0.07 4.06,-5.18 -0.07,-0.7 c 0,0 -4.48,-3.5 -10.85,-3.5 -6.93,0 -14.07,3.29 -14.07,10.99 0,7.14 6.3,9.24 11.48,10.78 3.08,0.91 5.95,1.82 5.95,3.92 0,3.22 -2.73,3.99 -5.67,3.99 -3.78,0 -7.49,-2.66 -7.49,-2.66 l -0.7,0.07 -3.99,5.18 z" />
+        <path
+           id="path882"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 426.24515,126.7808 h 7.77 l 0.49,-0.42 v -7.56 l -0.49,-0.42 h -7.77 l -0.49,0.42 v 7.56 z m -0.35,41.58 0.49,0.49 h 7.42 l 0.49,-0.49 v -34.79 l -0.49,-0.49 -7.42,0.98 -0.49,0.49 z" />
+        <path
+           id="path884"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 441.28202,176.0608 -0.28,0.63 c 2.59,6.16 9.17,8.33 16.52,8.33 7.28,0 14.56,-3.36 14.56,-10.64 0,-5.81 -3.99,-10.01 -11.69,-10.01 h -4.9 c -2.45,0 -3.57,-0.98 -3.57,-2.94 0,-0.42 0.07,-0.98 0.21,-1.54 1.4,0.28 2.94,0.42 4.62,0.42 8.61,0 14.84,-4.9 14.84,-13.02 0,-3.08 -1.12,-6.02 -3.36,-7.98 l 4.62,-1.19 0.42,-0.56 -1.05,-5.74 -0.56,-0.42 -8.96,1.75 h -6.65 c -9.03,0 -14.56,4.83 -14.56,13.44 0,5.95 2.52,10.64 8.19,12.67 -2.45,1.12 -3.85,4.06 -3.85,5.88 0,3.78 3.5,6.44 10.22,6.44 h 4.34 c 2.17,0 3.29,1.19 3.29,2.66 0,1.75 -2.17,3.57 -6.3,3.57 -7.21,0 -9.17,-3.92 -9.17,-3.92 l -0.63,-0.35 z m 15.12,-22.4 c -4.13,0 -6.65,-2.59 -6.65,-7.07 0,-4.34 2.73,-6.65 6.65,-6.65 4.55,0 6.93,2.31 6.93,6.65 0,4.55 -2.38,7.07 -6.93,7.07 z" />
+        <path
+           id="path886"
+           style="font-weight:bold;-inkscape-font-specification:'Anivers Bold'"
+           d="m 480.38577,168.3608 0.49,0.49 h 7.42 l 0.49,-0.49 v -27.51 c 1.68,-0.42 4.9,-1.05 6.09,-1.05 3.36,0 6.09,1.96 6.09,6.79 v 21.77 l 0.49,0.49 h 7.42 l 0.49,-0.49 v -23.24 c 0,-8.19 -5.46,-12.32 -11.2,-12.32 -4.2,0 -8.33,2.45 -9.8,6.37 l -2.24,-5.6 -0.56,-0.42 -6.79,0.91 -0.42,0.56 2.03,7.14 z" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Anivers;-inkscape-font-specification:Anivers;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         id="text3270"
+         aria-label=".org">
+        <path
+           id="path889"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Anivers;-inkscape-font-specification:Anivers;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           d="m 517.27626,168.29163 0.16,0.16 h 2.944 l 0.16,-0.16 v -3.008 l -0.16,-0.16 h -2.944 l -0.16,0.16 z" />
+        <path
+           id="path891"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Anivers;-inkscape-font-specification:Anivers;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           d="m 524.58276,163.29963 c 0,3.584 2.624,5.536 6.144,5.536 3.52,0 6.144,-1.952 6.144,-5.536 v -5.504 c 0,-3.584 -2.624,-5.536 -6.144,-5.536 -3.52,0 -6.144,1.952 -6.144,5.536 z m 2.56,-0.544 v -4.448 c 0,-2.464 1.28,-3.744 3.584,-3.744 2.24,0 3.584,1.28 3.584,3.744 v 4.448 c 0,2.464 -1.344,3.776 -3.584,3.776 -2.304,0 -3.584,-1.312 -3.584,-3.776 z" />
+        <path
+           id="path893"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Anivers;-inkscape-font-specification:Anivers;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           d="m 541.28526,168.29163 0.16,0.16 h 2.24 l 0.16,-0.16 v -12.992 c 0.672,-0.192 1.312,-0.288 2.016,-0.288 0.672,0 1.216,0.064 1.664,0.288 l 0.224,-0.16 0.48,-2.688 -0.16,-0.192 c -3.328,0 -4.256,2.176 -4.384,2.592 l -0.896,-2.24 -0.192,-0.128 -1.952,0.288 -0.16,0.192 0.8,3.008 z" />
+        <path
+           id="path895"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:Anivers;-inkscape-font-specification:Anivers;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           d="m 551.89626,166.49963 c 0,1.472 1.376,2.944 4.032,2.944 h 1.984 c 1.408,0 2.144,0.896 2.144,1.824 0,1.184 -1.216,2.272 -3.52,2.272 -3.744,0 -4.448,-1.792 -4.448,-1.792 l -0.224,-0.064 -1.92,0.864 -0.064,0.224 c 1.024,2.112 3.616,3.072 6.72,3.072 3.008,0 6.016,-1.44 6.016,-4.48 0,-2.432 -1.6,-4.224 -4.704,-4.224 h -1.984 c -1.216,0 -1.92,-0.768 -1.92,-2.048 0,-0.48 0.192,-0.96 0.192,-0.96 0,0 0.928,0.16 2.048,0.16 3.84,0 6.144,-2.4 6.144,-5.92 0,-1.6 -0.512,-3.264 -1.568,-3.904 l 2.176,-0.608 0.128,-0.224 -0.32,-1.76 -0.192,-0.128 -3.52,0.736 h -3.168 c -3.744,0 -6.016,2.112 -6.016,5.824 0,4.608 3.424,5.536 3.424,5.536 -0.832,0.512 -1.44,1.472 -1.44,2.656 z m 4.192,-4.48 c -2.368,0 -3.648,-1.28 -3.648,-3.712 0,-2.496 1.472,-3.744 3.648,-3.744 2.496,0 3.776,1.216 3.776,3.744 0,2.464 -1.28,3.712 -3.776,3.712 z" />
+      </g>
+    </g>
+  </g>
+</svg>
