@@ -1,1921 +1,234 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Massimo Menichinelli">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Massimo Menichinelli">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://openp2pdesign.github.io/">
-
-  
-
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-    
-
-    
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,600,700%7CRoboto:400,400i,500%7CRoboto+Mono&display=swap">
-  
-
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
-
-  
-
-
-
-
-  
-
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="openp2pdesign.org">
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="https://openp2pdesign.github.io/">
-
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="twitter:site" content="@openp2pdesign">
-  <meta property="twitter:creator" content="@openp2pdesign">
-  
-  <meta property="og:site_name" content="openp2pdesign.org">
-  <meta property="og:url" content="https://openp2pdesign.github.io/">
-  <meta property="og:title" content="openp2pdesign.org">
-  <meta property="og:description" content="Massimo Menichinelli"><meta property="og:image" content="https://openp2pdesign.github.io/img/logo.png">
-  <meta property="twitter:image" content="https://openp2pdesign.github.io/img/logo.png"><meta property="og:locale" content="en-us">
-  
-    <meta property="og:updated_time" content="2019-12-15T17:58:01&#43;00:00">
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://openp2pdesign.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://openp2pdesign.github.io/"
-}
-</script>
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>openp2pdesign.org</title>
-
-</head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-  
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="openp2pdesign.org"></a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="openp2pdesign.org"></a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      <li class="nav-item">
-        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="about" class="home-section wg-about   "  >
-    <div class="container">
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      <img class="portrait" src="https://s.gravatar.com/avatar/ba86da133cf9d1fc7446d2626d24b2cd?s=200')" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2>Massimo Menichinelli</h2>
-        <h3>Research Fellow</h3>
-
-        
-        <h3>
-          <a href="https://www.rmit.edu.au/" target="_blank" rel="noopener">
-          <span>RMIT University</span>
-          </a>
-        </h3>
-        
-        <h3>
-          <a href="https://www.aalto.fi/en" target="_blank" rel="noopener">
-          <span>Aalto University</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-        <li>
-          <a href="mailto:info@openp2pdesign.org" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://twitter.com/openp2pdesign" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://orcid.org/0000-0002-9391-6653" target="_blank" rel="noopener">
-            <i class="ai ai-orcid big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.es/citations?user=_dnvybAAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/massimomenichinelli/" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.researchgate.net/profile/Massimo_Menichinelli" target="_blank" rel="noopener">
-            <i class="ai ai-researchgate big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://github.com/openp2pdesign" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>Biography</h1>
-
-    <p>Massimo Menichinelli is a designer who researches and develops open, collaborative, and co-design projects and the systems that enable them since 2005. He uses design tools and processes in order to help companies, organizations, cities and local communities to develop open and collaborative processes, business, services, places and projects such as Open Design, FabLab and User-driven Open and Social Innovation initiatives. Massimo has given lectures and workshops in various countries including Italy, Spain, Finland, Germany, United Kingdom, Mexico, Colombia, South Korea and Singapore so far.</p>
-<p>Massimo has published several scientific articles and books on the topics of Open Design, Makers and Fab Labs and has lectured on Digital Fabrication and Open Design at Aalto University (Helsinki, Finland) and Open Design at SUPSI (Lugano, Switzerland) and in the Fab Academy (Opendot and WeMake, Italy). Massimo worked on the development of the Aalto FabLab, the MUSE Fab Lab (Trento, Italy), the Opendot makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab &amp; Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy. For several years Massimo was also a project manager for research projects at IAAC | Fab City Research Lab, especially in the MAKE-IT and SISCODE Horizon 2020 European project and as a coordinator of the Creative Europe platform programme Distributed Design Market Platform and as project manager of Fablabs.io, the official and open source platform for the global Fab Lab Network. He is now Research Fellow at RMIT Europe, in Barcelona, working at the coordination of the Horizon 2020 project OpenInnoTrain.</p>
-
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Artificial Intelligence</li>
-          
-          <li>Computational Linguistics</li>
-          
-          <li>Information Retrieval</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Artificial Intelligence, 2012</p>
-              <p class="institution">Stanford University</p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="openp2pdesign.org">
+        <meta name="author" content="Massimo Menichinelli">
+        <link rel="icon" href="media/favicon.ico">
+        <title>openp2pdesign.org - Massimo Menichinelli</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800|Roboto:400,400i,500,500i&display=swap" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+        <!-- Custom styles for this template -->
+        <link href="media/openp2pdesign.css" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
+    </head>
+    <body>
+        <div class="d-flex flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm sticky-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="media/logo3.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="p-2" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-2" href="#research">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-2" href="#publications">Publications</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MEng in Artificial Intelligence, 2009</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
+        </div>
+        <div class="container main">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <h1>openp2pdesign.org</h1>
+                        <h2>Design for Open Systems, Processes, Projects, Places</h2>
+                    </p>
+                </div>
             </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Artificial Intelligence, 2008</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Intro paragraph with links to sections in the text
+                    </p>
+                </div>
             </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="experience" class="home-section wg-experience   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border exp-fill">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">CEO</h4>
-            <h4 class="card-title exp-company text-muted my-0">GenCoin</h4>
-            <div class="text-muted exp-meta">
-              Jan 2017 –
-              
-                Present
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Massimo Menichinelli</h2>
+                </div>
             </div>
-            <div class="card-text">Responsibilities include:</p>
-<ul>
-<li>Analysing</li>
-<li>Modelling</li>
-<li>Deploying</li>
-</ul></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Professor</h4>
-            <h4 class="card-title exp-company text-muted my-0">University X</h4>
-            <div class="text-muted exp-meta">
-              Jan 2016 –
-              
-                Dec 2016
-              
-              
-                <span class="middot-divider"></span>
-                <span>California</span>
-              
+            <div class="row profile">
+                <div class="col-6">
+                    <a name="about"></a>
+                    <img class="img-fluid" src="media/MM.jpg">
+                    <h3>Research Fellow @
+                        <a href="https://www.rmit.edu.au/" target="_blank" rel="noopener">
+                            <span>RMIT University</span>
+                        </a>
+                    </h3>
+                    <h3>
+                        Doctoral candidate @
+                        <a href="https://www.aalto.fi/en" target="_blank" rel="noopener">
+                            <span>Aalto University</span>
+                        </a>
+                    </h3>
+                    <ul aria-hidden="true" class="inline-links">
+                        <li>
+                            <a href="mailto:info@openp2pdesign.org">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/openp2pdesign" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://orcid.org/0000-0002-9391-6653" target="_blank" rel="noopener">
+                                <i class="fab fa-orcid"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.es/citations?user=_dnvybAAAAAJ" target="_blank" rel="noopener">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/massimomenichinelli/" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.researchgate.net/profile/Massimo_Menichinelli" target="_blank" rel="noopener">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/openp2pdesign" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <p>
+                        Massimo Menichinelli is a designer who researches and develops open, collaborative, and co-design projects and the systems that enable them since 2005. He uses design tools and processes in order to help companies, organizations, cities and local communities to develop open and collaborative processes, business, services, places and projects such as Open Design, FabLab and User-driven Open and Social Innovation initiatives. Massimo has given lectures and workshops in various countries including Italy, Spain, Finland, Germany, United Kingdom, Mexico, Colombia, South Korea, Singapore, China.
+                    </p>
+                    <p>
+                        Massimo has published several scientific articles and books on the topics of Open Design, Makers and Fab Labs and has lectured on Digital Fabrication and Open Design at Aalto University (Helsinki, Finland) and Open Design at SUPSI (Lugano,
+                        Switzerland) and in the Fab Academy (Opendot and WeMake, Italy). Massimo worked on the development of the Aalto FabLab, the MUSE Fab Lab (Trento, Italy), the Opendot makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab
+                        & Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy. For several years Massimo was also a project manager for research projects at IAAC | Fab City Research Lab, especially in the MAKE-IT and SISCODE Horizon 2020
+                        European project and as a coordinator of the Creative Europe platform programme Distributed Design Market Platform and as project manager of Fablabs.io, the official and open source platform for the global Fab Lab Network. He is now Research Fellow
+                        at RMIT Europe, in Barcelona, working at the coordination of the Horizon 2020 project OpenInnoTrain.
+                    </p>
+                </div>
             </div>
-            <div class="card-text">Taught electronic engineering and researched semiconductor physics.</div>
-          </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>openp2pdesign.org</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a name="about"></a>
+                    <img class="img-fluid" src="media/screenshot.png">
+                </div>
+                <div class="col-6">
+                    <p>
+                        This website started at the beginning of 2007 as a personal website as it was intended to serve as a tool to publish and develop further Massimo Menichinelli’s graduation thesis, developed during 2005 and publicly presented on 6th of April 2006 at
+                        the Politecnico di Milano, Faculty of Design. It was a theoretical thesis developed studying the possibility of a role for design in giving support to communities, enabling them to act and improve their conditions. The starting point was the success
+                        of Open Source and Peer-to-Peer software, and specially the success of theirs community-based organizational forms. During the following years it has grown both as a website and as a project, with more posts and more guest authors on one side, and
+                        more lectures, workshops, publications and other projects on the other side. The goal of this website is to further improve the discussion on using design tools and processes for developing proper and collaborative projects for the communities and
+                        territories that will use them.
+                    </p>
+                    <p>
+                        Link to old website <a href="#">old website</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Open P2P Design</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a name="about"></a>
+                    <img class="img-fluid" src="media/04.open.design.system.map.jpg">
+                </div>
+                <div class="col-6">
+                    <p>
+                        Open P2P Design is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it
+                        for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
+                        Government), enterprises (Enterprise 2.0 and Open Business) or Design (Open Design).
+                    </p>
+                    <p>
+                        The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active
+                        participation of communities.
+                    </p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Research</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        ...
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid" src="media/total4.png">
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Publications</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="pubsviz"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="pubs"></div>
+                </div>
+            </div>
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                    <div class="col-12 col-md"></div>
+                </div>
+            </footer>
         </div>
-      </div>
-    </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="accomplishments" class="home-section wg-accomplishments   "  >
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Accomplish­ments</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Neural Networks and Deep Learning</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
-
-            Oct 2018
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
+        <div id="footer-bg">
         </div>
-      </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><a href="https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Blockchain Fundamentals</h4></a><div class="card-subtitle my-0 article-metadata"><a href="https://www.edx.org" target="_blank" rel="noopener">edX</a><span class="middot-divider"></span>
-
-            Mar 2018
-            
-          </div>
-
-          
-            <div class="card-text">Formulated informed blockchain models, hypotheses, and use cases.</div>
-          
-
-          
-            <a class="card-link" href="https://www.edx.org" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
-        </div>
-      </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Object-Oriented Programming in R: S3 and R6 Course</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.datacamp.com" target="_blank" rel="noopener">DataCamp</a><span class="middot-divider"></span>
-
-            Jul 2017
-            
-            – Dec 2017
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.datacamp.com" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
-        </div>
-      </div>
-    
-    
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Projects</h1>
-    
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-
-
-    
-
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="talks" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="featured" class="home-section wg-featured   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Featured Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="publications" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    <div class="alert alert-note">
-  <div>
-    Quickly discover relevant content by <a href="https://openp2pdesign.github.io/publication/">filtering publications</a>.
-  </div>
-</div>
-
-
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-
-
-  
-  <span><a href="/authors/massimo-menichinelli/">Massimo Menichinelli</a></span>, <span><a href="/authors/alessandra-gerson-saltiel-schmidt/">Alessandra Gerson Saltiel Schmidt</a></span>, <span><a href="/authors/priscilla-ferronato/">Priscilla Ferronato</a></span>
-
-  </span>
-  (2019).
-  <a href="/publication/content/publication/menichinelli-mapping-nodate/">Mapping strategies for distributed, social and collaborative design systems of makers, designers and social entrepreneurs</a>.
-  <em>ADIM2019 Academy for Design Innovation Management</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.conftool.org/adim2019/index.php?page=browseSessions&amp;form_session=104#paperID378" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/content/publication/menichinelli-mapping-nodate/cite.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-
-
-  
-  <span><a href="/authors/massimo-menichinelli/">Massimo Menichinelli</a></span>
-
-  </span>
-  (2019).
-  <a href="/publication/content/publication/menichinelli-research-2019/">A Research through Design Framework from the Evaluation of a Meta-Design Platform for Open and Collaborative Design and Making Processes</a>.
-  <em>Proceedings of the Design Society: International Conference on Engineering Design</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.cambridge.org/core/product/identifier/S2220434219000052/type/journal_article" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/content/publication/menichinelli-research-2019/cite.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1017/dsi.2019.5" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-
-
-  
-  <span><a href="/authors/massimo-menichinelli/">Massimo Menichinelli</a></span>
-
-  </span>
-  (2019).
-  <a href="/publication/content/publication/menichinelli-openp-2-pdesignopenmetadesign-2019/">openp2pdesign/OpenMetaDesign: v1.0: Version tested with users on 16/10/2018</a>.
-  <em>Zenodo</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zenodo.org/record/2597616#.XJAAFkRKgb0" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/content/publication/menichinelli-openp-2-pdesignopenmetadesign-2019/cite.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.5281/zenodo.2597616" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-
-
-  
-  <span><a href="/authors/massimo-menichinelli/">Massimo Menichinelli</a></span>, <span><a href="/authors/alessandra-gerson-saltiel-schmidt/">Alessandra Gerson Saltiel Schmidt</a></span>
-
-  </span>
-  (2019).
-  <a href="/publication/content/publication/menichinelli-measuring-2019/">Measuring the Social Impact of Maker Initiatives. Frameworks and Guidelines for Scaling the Assessment on Digital Platforms</a>.
-  <em>Sharing Society. The Impact of Collaborative Collective Actions in the Transformation of Contemporary Societies.</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://sharingsocietyproject.org/2019/05/08/conference-proceedings/" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/content/publication/menichinelli-measuring-2019/cite.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-
-
-  
-  <span><a href="/authors/massimo-menichinelli/">Massimo Menichinelli</a></span>
-
-  </span>
-  (2019).
-  <a href="/publication/content/publication/menichinelli-openp-2-pdesignopenmetadesign-2019-1/">openp2pdesign/OpenMetaDesign: v1.1 Secure MongoDB implemented in Docker Compose</a>.
-  <em>Zenodo</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zenodo.org/record/2530360" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/content/publication/menichinelli-openp-2-pdesignopenmetadesign-2019-1/cite.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.5281/zenodo.2530360" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-      
-    
-
-    
-    <div class="see-all">
-      <a href="/publication/">
-        See all publications
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="tags" class="home-section wg-tag-cloud   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Popular Topics</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-      
-      
-      
-      
-      
-
-      <div class="tag-cloud">
-        
-          
-          
-          
-          <a href="/tags/activity-theory/" style="font-size:0.7rem">activity theory</a>
-        
-          
-          
-          
-          <a href="/tags/arduino/" style="font-size:0.7rem">arduino</a>
-        
-          
-          
-          
-          <a href="/tags/artificial-intelligence-incl.-robotics/" style="font-size:0.7rem">Artificial Intelligence (incl. Robotics)</a>
-        
-          
-          
-          
-          <a href="/tags/clustering/" style="font-size:0.7rem">clustering</a>
-        
-          
-          
-          
-          <a href="/tags/co-word-analysis/" style="font-size:0.7rem">Co-word analysis</a>
-        
-          
-          
-          
-          <a href="/tags/collaboration/" style="font-size:0.7rem">collaboration</a>
-        
-          
-          
-          
-          <a href="/tags/community/" style="font-size:0.7rem">community</a>
-        
-          
-          
-          
-          <a href="/tags/computer-appl.-in-social-and-behavioral-sciences/" style="font-size:0.7rem">Computer Appl. in Social and Behavioral Sciences</a>
-        
-          
-          
-          
-          <a href="/tags/craftivism/" style="font-size:0.7rem">Craftivism</a>
-        
-          
-          
-          
-          <a href="/tags/data-mining-and-knowledge-discovery/" style="font-size:0.7rem">Data Mining and Knowledge Discovery</a>
-        
-          
-          
-          
-          <a href="/tags/development/" style="font-size:0.7rem">development</a>
-        
-          
-          
-          
-          <a href="/tags/emotion-profiling/" style="font-size:0.7rem">Emotion profiling</a>
-        
-          
-          
-          
-          <a href="/tags/fablab/" style="font-size:0.7rem">FabLab</a>
-        
-          
-          
-          
-          <a href="/tags/fadfest/" style="font-size:0.7rem">fadfest</a>
-        
-          
-          
-          
-          <a href="/tags/image-processing-and-computer-vision/" style="font-size:0.7rem">Image Processing and Computer Vision</a>
-        
-          
-          
-          
-          <a href="/tags/information-systems-applications-incl.-internet/" style="font-size:0.7rem">Information Systems Applications (incl. Internet)</a>
-        
-          
-          
-          
-          <a href="/tags/internet-science/" style="font-size:0.7rem">Internet science</a>
-        
-          
-          
-          
-          <a href="/tags/maker/" style="font-size:0.7rem">maker</a>
-        
-          
-          
-          
-          <a href="/tags/open-design/" style="font-size:2rem">Open Design</a>
-        
-          
-          
-          
-          <a href="/tags/process/" style="font-size:2rem">Process</a>
-        
-      </div>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-
-      
-
-    
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.3227ab49eed49815d1b4ba40154f74e7.js"></script>
-
-    
-
-
-
-
-
-
-  
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    2019 Creative Commons - BY &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
+        <!-- Do not touch this! -->
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+        <script src="media/pubs.js"></script>
+        <script src="media/pubsviz.js"></script>
+    </body>
 </html>
