@@ -19,6 +19,13 @@
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
+        <script>
+            const Cite = require('citation-js');
+        </script>
     </head>
     <body>
         <!-- BibTex template -->
@@ -52,13 +59,19 @@
                         [bib]
                     </a>
                 </div>
-                <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                <!-- <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                    <div class="well">
+                        <pre><span class="bibtexraw noread"></span></pre>
+                    </div>
+                </div> -->
+                <div>
+                    <span class="bibtextype"></span>
+                </div>
+                <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
                     <div class="well">
                         <pre><span class="bibtexraw noread"></span></pre>
                     </div>
                 </div>
-                <div style="display:none">
-                    <span class="bibtextype"></span></div>
             </p>
         </div>
         <!-- BibTex template -->
@@ -308,7 +321,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <div id="pubs"></div>
+                                    ddd
+                                    <div id="pubs">dsfdsf</div>
                                 </div>
                             </div>
                             <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -321,23 +335,7 @@
                         <!-- Do not touch this! -->
                         <!-- Bootstrap core JavaScript ================================================== -->
                         <!-- Placed at the end of the document so the pages load faster -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
-                        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
-                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
-                        <script>
-                            const Cite = require('citation-js');
-                        </script>
-                        <script>
-                            let example = new Cite('Q21972834');
-                            let output = example.format('bibliography', {
-                                format: 'html',
-                                template: 'apa',
-                                lang: 'en-US'
-                            });
-                            console.log(output);
-                        </script>
-                        <script src="media/pubs.js"></script>
-                        <script src="media/pubsviz.js"></script>
+                        <script src="pubs.js"></script>
+                        <script src="pubsviz.js"></script>
                     </body>
                 </html>
