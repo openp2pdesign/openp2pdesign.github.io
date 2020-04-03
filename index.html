@@ -23,45 +23,43 @@
     <body>
         <!-- BibTex template -->
         <div class="bibtex_template" style="display: none;">
-            <ul>
-                <li>
-                    <span class="if title">
-                        <span style="text-decoration: underline;" class="title"></span>,
-                    </span>
-                    <div class="if author">
-                        <span class="author"></span>
+            <p>
+                <span class="if title">
+                    <span class="title"></span>,
+                </span>
+                <div class="if author">
+                    <span class="author"></span>
+                </div>
+                <div>
+                    <span class="if journal">
+                        <em>
+                            <span class="journal"></span></em>,</span>
+                    <span class="if publisher">
+                        <em>
+                            <span class="publisher"></span></em>,</span>
+                    <span class="if booktitle">In
+                        <em>
+                            <span class="booktitle"></span></em>,</span>
+                    <span class="if address">
+                        <span class="address"></span>,</span>
+                    <span class="if month">
+                        <span class="month"></span>,</span>
+                    <span class="if year">
+                        <span class="year"></span>.</span>
+                    <span class="if note">
+                        <span class="note"></span></span>
+                    <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape="bibtexjs-css-escape">
+                        [bib]
+                    </a>
+                </div>
+                <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                    <div class="well">
+                        <pre><span class="bibtexraw noread"></span></pre>
                     </div>
-                    <div>
-                        <span class="if journal">
-                            <em>
-                                <span class="journal"></span></em>,</span>
-                        <span class="if publisher">
-                            <em>
-                                <span class="publisher"></span></em>,</span>
-                        <span class="if booktitle">In
-                            <em>
-                                <span class="booktitle"></span></em>,</span>
-                        <span class="if address">
-                            <span class="address"></span>,</span>
-                        <span class="if month">
-                            <span class="month"></span>,</span>
-                        <span class="if year">
-                            <span class="year"></span>.</span>
-                        <span class="if note">
-                            <span class="note"></span></span>
-                        <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape="bibtexjs-css-escape">
-                            [bib]
-                        </a>
-                    </div>
-                    <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-                        <div class="well">
-                            <pre><span class="bibtexraw noread"></span></pre>
-                        </div>
-                    </div>
-                    <div style="display:none">
-                        <span class="bibtextype"></span></div>
-                </li>
-            </ul>
+                </div>
+                <div style="display:none">
+                    <span class="bibtextype"></span></div>
+            </p>
         </div>
         <!-- BibTex template -->
         <div class="d-flex flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm sticky-top">
@@ -326,6 +324,19 @@
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
                         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
+                        <script>
+                            const Cite = require('citation-js');
+                        </script>
+                        <script>
+                            let example = new Cite('Q21972834');
+                            let output = example.format('bibliography', {
+                                format: 'html',
+                                template: 'apa',
+                                lang: 'en-US'
+                            });
+                            console.log(output);
+                        </script>
                         <script src="media/pubs.js"></script>
                         <script src="media/pubsviz.js"></script>
                     </body>
