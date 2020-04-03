@@ -21,6 +21,49 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
     </head>
     <body>
+        <!-- BibTex template -->
+        <div class="bibtex_template" style="display: none;">
+            <ul>
+                <li>
+                    <span class="if title">
+                        <span style="text-decoration: underline;" class="title"></span>,
+                    </span>
+                    <div class="if author">
+                        <span class="author"></span>
+                    </div>
+                    <div>
+                        <span class="if journal">
+                            <em>
+                                <span class="journal"></span></em>,</span>
+                        <span class="if publisher">
+                            <em>
+                                <span class="publisher"></span></em>,</span>
+                        <span class="if booktitle">In
+                            <em>
+                                <span class="booktitle"></span></em>,</span>
+                        <span class="if address">
+                            <span class="address"></span>,</span>
+                        <span class="if month">
+                            <span class="month"></span>,</span>
+                        <span class="if year">
+                            <span class="year"></span>.</span>
+                        <span class="if note">
+                            <span class="note"></span></span>
+                        <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape="bibtexjs-css-escape">
+                            [bib]
+                        </a>
+                    </div>
+                    <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                        <div class="well">
+                            <pre><span class="bibtexraw noread"></span></pre>
+                        </div>
+                    </div>
+                    <div style="display:none">
+                        <span class="bibtextype"></span></div>
+                </li>
+            </ul>
+        </div>
+        <!-- BibTex template -->
         <div class="d-flex flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm sticky-top">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -60,178 +103,230 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>
+                    <p class="large-text">
                         Intro paragraph with links to sections in the text
-                    </p>
-                </div>
-            </div>
-            <div class="separator"><a name="about"></div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Massimo Menichinelli</h2>
-                </div>
-            </div>
-            <div class="row profile">
-                <div class="col-6">
-                    <a name="about"></a>
-                    <img class="img-fluid" src="media/MM.jpg">
-                    <h3>Research Fellow @
-                        <a href="https://www.rmit.edu.au/" target="_blank" rel="noopener">
-                            <span>RMIT University</span>
-                        </a>
-                    </h3>
-                    <h3>
-                        Doctoral candidate @
-                        <a href="https://www.aalto.fi/en" target="_blank" rel="noopener">
-                            <span>Aalto University</span>
-                        </a>
-                    </h3>
-                    <ul aria-hidden="true" class="inline-links">
-                        <li>
-                            <a href="mailto:info@openp2pdesign.org">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/openp2pdesign" target="_blank" rel="noopener">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://orcid.org/0000-0002-9391-6653" target="_blank" rel="noopener">
-                                <i class="fab fa-orcid"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://scholar.google.es/citations?user=_dnvybAAAAAJ" target="_blank" rel="noopener">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/massimomenichinelli/" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.researchgate.net/profile/Massimo_Menichinelli" target="_blank" rel="noopener">
-                                <i class="fab fa-researchgate"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/openp2pdesign" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <p>
-                        Massimo Menichinelli is a designer who researches and develops open, collaborative, and co-design projects and the systems that enable them since 2005. He uses design tools and processes in order to help companies, organizations, cities and local communities to develop open and collaborative processes, business, services, places and projects such as Open Design, FabLab and User-driven Open and Social Innovation initiatives. Massimo has given lectures and workshops in various countries including Italy, Spain, Finland, Germany, United Kingdom, Mexico, Colombia, South Korea, Singapore, China.
-                    </p>
-                    <p>
-                        Massimo has published several scientific articles and books on the topics of Open Design, Makers and Fab Labs and has lectured on Digital Fabrication and Open Design at Aalto University (Helsinki, Finland) and Open Design at SUPSI (Lugano,
-                        Switzerland) and in the Fab Academy (Opendot and WeMake, Italy). Massimo worked on the development of the Aalto FabLab, the MUSE Fab Lab (Trento, Italy), the Opendot makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab
-                        & Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy. For several years Massimo was also a project manager for research projects at IAAC | Fab City Research Lab, especially in the MAKE-IT and SISCODE Horizon 2020
-                        European project and as a coordinator of the Creative Europe platform programme Distributed Design Market Platform and as project manager of Fablabs.io, the official and open source platform for the global Fab Lab Network. He is now Research Fellow
-                        at RMIT Europe, in Barcelona, working at the coordination of the Horizon 2020 project OpenInnoTrain.
-                    </p>
-                </div>
-            </div>
-            <div class="separator"><a name="openp2pdesignorg"></div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>openp2pdesign.org</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <a name="about"></a>
-                    <img class="img-fluid" src="media/screenshot.png">
-                </div>
-                <div class="col-6">
-                    <p>
-                        This website started at the beginning of 2007 as a personal website as it was intended to serve as a tool to publish and develop further Massimo Menichinelli’s graduation thesis, developed during 2005 and publicly presented on 6th of April 2006 at
-                        the Politecnico di Milano, Faculty of Design. It was a theoretical thesis developed studying the possibility of a role for design in giving support to communities, enabling them to act and improve their conditions. The starting point was the success
-                        of Open Source and Peer-to-Peer software, and specially the success of theirs community-based organizational forms. During the following years it has grown both as a website and as a project, with more posts and more guest authors on one side, and
-                        more lectures, workshops, publications and other projects on the other side. The goal of this website is to further improve the discussion on using design tools and processes for developing proper and collaborative projects for the communities and
-                        territories that will use them.
-                    </p>
-                    <p>
-                        Link to old website <a href="#">old website</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="separator"></div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Open P2P Design</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <a name="about"></a>
-                    <img class="img-fluid" src="media/04.open.design.system.map.jpg">
-                </div>
-                <div class="col-6">
-                    <p>
-                        Open P2P Design is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it
-                        for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
-                        Government), enterprises (Enterprise 2.0 and Open Business) or Design (Open Design).
-                    </p>
-                    <p>
-                        The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active
-                        participation of communities.
-                    </p>
-                </div>
-            </div>
-            <div class="separator"><a name="research"></div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Research</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p>
+                        <a class="p-2" href="#about">About</a>
                         ...
+                        <a class="p-2" href="#openp2pdesignorg">openp2pdesign.org</a>
+                        ...
+                        <a class="p-2" href="#research">Research</a>
+                        ...
+                        <a class="p-2" href="#publications">Publications</a>
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <img class="img-fluid" src="media/total4.png">
-                </div>
-            </div>
-            <div class="separator"><a name="publications"></div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Publications</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="pubsviz"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="pubs"></div>
-                </div>
-            </div>
-            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="separator">
+                <a name="about"></div>
                 <div class="row">
-                    <div class="col-12 col-md"></div>
+                    <div class="col-12">
+                        <h2>Massimo Menichinelli</h2>
+                    </div>
                 </div>
-            </footer>
-        </div>
-        <div id="footer-bg">
-        </div>
-        <!-- Do not touch this! -->
-        <!-- Bootstrap core JavaScript ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
-        <script src="media/pubs.js"></script>
-        <script src="media/pubsviz.js"></script>
-    </body>
-</html>
+                <div class="row profile">
+                    <div class="col-6">
+                        <a name="about"></a>
+                        <img class="img-fluid" src="media/MM.jpg">
+                        <h3>Research Fellow @
+                            <a href="https://www.rmit.edu.au/" target="_blank" rel="noopener">
+                                <span>RMIT University</span>
+                            </a>
+                        </h3>
+                        <h3>
+                            Doctoral candidate @
+                            <a href="https://www.aalto.fi/en" target="_blank" rel="noopener">
+                                <span>Aalto University</span>
+                            </a>
+                        </h3>
+                        <ul aria-hidden="true" class="inline-links">
+                            <li>
+                                <a href="mailto:info@openp2pdesign.org">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/openp2pdesign" target="_blank" rel="noopener">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://orcid.org/0000-0002-9391-6653" target="_blank" rel="noopener">
+                                    <i class="fab fa-orcid"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://scholar.google.es/citations?user=_dnvybAAAAAJ" target="_blank" rel="noopener">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/massimomenichinelli/" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.researchgate.net/profile/Massimo_Menichinelli" target="_blank" rel="noopener">
+                                    <i class="fab fa-researchgate"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/openp2pdesign" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Massimo Menichinelli is a designer who researches and develops open, collaborative, and co-design projects and the systems that enable them since 2005. He uses design tools and processes in order to help companies, organizations, cities and local
+                            communities to develop open and collaborative processes, business, services, places and projects such as Open Design, FabLab and User-driven Open and Social Innovation initiatives. Massimo has given lectures and workshops in various countries
+                            including Italy, Spain, Finland, Germany, United Kingdom, Mexico, Colombia, South Korea, Singapore, China.
+                        </p>
+                        <p>
+                            Massimo has published several scientific articles and books on the topics of Open Design, Makers and Fab Labs and has lectured on Digital Fabrication and Open Design at Aalto University (Helsinki, Finland) and Open Design at SUPSI (Lugano,
+                            Switzerland) and in the Fab Academy (Opendot and WeMake, Italy). Massimo worked on the development of the Aalto FabLab, the MUSE Fab Lab (Trento, Italy), the Opendot makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab
+                            & Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy. For several years Massimo was also a project manager for research projects at IAAC | Fab City Research Lab, especially in the MAKE-IT and SISCODE Horizon 2020
+                            European project and as a coordinator of the Creative Europe platform programme Distributed Design Market Platform and as project manager of Fablabs.io, the official and open source platform for the global Fab Lab Network. He is now Research Fellow
+                            at RMIT Europe, in Barcelona, working at the coordination of the Horizon 2020 project OpenInnoTrain.
+                        </p>
+                    </div>
+                </div>
+                <div class="separator">
+                    <a name="openp2pdesignorg"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>openp2pdesign.org</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a name="about"></a>
+                            <img class="img-fluid" src="media/screenshot.png">
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                This website started at the beginning of 2007 as a personal website as it was intended to serve as a tool to publish and develop further Massimo Menichinelli’s graduation thesis, developed during 2005 and publicly presented on 6th of April 2006 at
+                                the Politecnico di Milano, Faculty of Design. It was a theoretical thesis developed studying the possibility of a role for design in giving support to communities, enabling them to act and improve their conditions. The starting point was the success
+                                of Open Source and Peer-to-Peer software, and specially the success of theirs community-based organizational forms. During the following years it has grown both as a website and as a project, with more posts and more guest authors on one side, and
+                                more lectures, workshops, publications and other projects on the other side. The goal of this website is to further improve the discussion on using design tools and processes for developing proper and collaborative projects for the communities and
+                                territories that will use them.
+                            </p>
+                            <p>
+                                You can access an archive of the old version of the website
+                                <a href="#">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Open P2P Design</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a name="about"></a>
+                            <img class="img-fluid" src="media/04.open.design.system.map.jpg">
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                Open P2P Design is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it
+                                for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
+                                Government), enterprises (Enterprise 2.0 and Open Business) or Design (Open Design).
+                            </p>
+                            <p>
+                                The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active
+                                participation of communities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="separator">
+                        <a name="research"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Research</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="img-fluid" src="media/total4.png">
+                            </div>
+                        </div>
+                        <div class="separator">
+                            <a name="publications"></div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Publications</h2>
+                                    <bibtex src="data/bib.bib"></bibtex>
+                                    <p>
+                                        ...
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="searchbar">
+                                        <div style="float:left;">
+                                            <button type="button" class="btn btn-default" onclick="reset()">Reset</button>
+                                        </div>
+                                        <div style="float:left;">
+                                            <select id="authorselect" class="btn bibtex_search bibtex_author" style="border: 1px solid lightgrey;" search="author">
+                                                <option value="">Search Author</option>
+                                            </select>
+                                        </div>
+                                        <div style="float:left;">
+                                            <select id="topicselect" class="btn bibtex_search" style="border: 1px solid lightgrey;">
+                                                <option value="">Search Topic</option>
+                                                <!-- Add topic values here -->
+                                                <option value="Example topic">Open Design</option>
+                                            </select>
+                                        </div>
+                                        <div style="float:left;">
+                                            <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search publications">
+                                            <span class="help-block">Example: journal 2015 (finds the intersection of the two terms)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="bibtex_display"></div>
+                                    <div class="bibtex_structure">
+                                        <div class="group year" extra="ASC number">
+                                            <h2 class="title"></h2>
+                                            <div class="templates">
+                                                <span class="year"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="pubsviz"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="pubs"></div>
+                                </div>
+                            </div>
+                            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                                <div class="row">
+                                    <div class="col-12 col-md"></div>
+                                </div>
+                            </footer>
+                        </div>
+                        <div id="footer-bg"></div>
+                        <!-- Do not touch this! -->
+                        <!-- Bootstrap core JavaScript ================================================== -->
+                        <!-- Placed at the end of the document so the pages load faster -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+                        <script src="media/pubs.js"></script>
+                        <script src="media/pubsviz.js"></script>
+                    </body>
+                </html>

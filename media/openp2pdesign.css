@@ -214,6 +214,22 @@ i a, i a:hover, .inline-links a, .inline-links a:hover {
     margin-bottom: 20px;
 }
 
+.large-text {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+/* bibtex style */
+
+h2.title {
+    margin-top: 30px !important;
+    border-top: 1px dotted #37abc8;
+}
+
 /*  Fix iframe size
 	From http://www.bymichaellancaster.com/blog/fluid-iframe-and-images-without-javascript-plugins/
 	*/
