@@ -18,6 +18,11 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
+        <script>
+            const Cite = require('citation-js');
+        </script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     </head>
     <body>
@@ -34,10 +39,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="p-2" href="#about">About MM</a>
+                                <a class="p-2" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="p-2" href="#openp2pdesignorg">openp2pdesign.org</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-2" href="#openp2pdesign">OpenP2PDesign</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-2" href="#openmetadesign">OpenMetaDesign</a>
                             </li>
                             <li class="nav-item">
                                 <a class="p-2" href="#research">Research</a>
@@ -142,10 +153,10 @@
                             Switzerland) and in the <a href="http://fabacademy.org/">Fab Academy</a> in the <a href="http://www.opendotlab.it/">Opendot</a> and <a href="http://wemake.cc/">WeMake</a> fab labs (Milan, Italy).
                         </p>
                         <p>
-                            Massimo worked on the development of the Aalto FabLab, the MUSE Fab Lab (Trento, Italy), the Opendot makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab & Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy.
+                            Massimo worked on the development of the <a href="https://fablab.aalto.fi/">Aalto FabLab</a>, the <a href="http://fablab.muse.it/">MUSE Fab Lab</a> (Trento, Italy), the <a href="http://www.opendotlab.it/">Opendot</a> makerspace/Fab Lab (Milan, Italy) and as a Director at Make In Italy Italian Fablab & Makers Foundation CDB where he researched and facilitated Fab Labs and Makers in Italy.
                         </p>
                         <p>
-                            For several years Massimo was also a project manager for research projects at IAAC | Fab Lab Barcelona / Fab City Research Lab, especially in the <a href="http://make-it.io/">MAKE-IT</a> and <a href="https://siscodeproject.eu/">SISCODE</a> Horizon 2020 European project and as a coordinator of the Creative Europe platform programme <a href="https://distributeddesign.eu/">Distributed Design Market Platform (DDMP)</a> and as project manager of <a href="https://fablabs.io/">Fablabs.io</a>, the official and open source platform for the global Fab Lab Network. He is now Research Fellow at <a href="https://www.rmit.eu/">RMIT Europe</a>, the European hub of <a href="https://www.rmit.edu.au/">RMIT University</a>, in Barcelona, working at the coordination of the Horizon 2020 project <a href="https://openinnotrain.eu/">OpenInnoTrain</a>.
+                            For several years Massimo was also a project manager for research projects at <a href="https://iaac.net/">IAAC</a> | <a href="https://fablabbcn.org/">Fab Lab Barcelona / Fab City Research Lab</a>, especially in the <a href="http://make-it.io/">MAKE-IT</a> and <a href="https://siscodeproject.eu/">SISCODE</a> Horizon 2020 European project and as a coordinator of the Creative Europe platform programme <a href="https://distributeddesign.eu/">Distributed Design Market Platform (DDMP)</a> and as project manager of <a href="https://fablabs.io/">Fablabs.io</a>, the official and open source platform for the global Fab Lab Network. He is now Research Fellow at <a href="https://www.rmit.eu/">RMIT Europe</a>, the European hub of <a href="https://www.rmit.edu.au/">RMIT University</a>, in Barcelona, working at the coordination of the Horizon 2020 project <a href="https://openinnotrain.eu/">OpenInnoTrain</a>.
                         </p>
                     </div>
                 </div>
@@ -163,15 +174,10 @@
                         </div>
                         <div class="col-6">
                             <p>
-                                This website started at the beginning of 2007 as a personal website as it was intended to serve as a tool to publish and develop further Massimo Menichinelli’s graduation thesis, developed during 2005 and publicly presented on 6th of April 2006 at
-                                the Politecnico di Milano, Faculty of Design. It was a theoretical thesis developed studying the possibility of a role for design in giving support to communities, enabling them to act and improve their conditions. The starting point was the success
-                                of Open Source and Peer-to-Peer software, and specially the success of theirs community-based organizational forms. During the following years it has grown both as a website and as a project, with more posts and more guest authors on one side, and
-                                more lectures, workshops, publications and other projects on the other side. The goal of this website is to further improve the discussion on using design tools and processes for developing proper and collaborative projects for the communities and
-                                territories that will use them.
+                                <strong>openp2pdesign.org</strong> started at the beginning of 2007 as a personal website as it was intended to serve as a tool to publish and develop further Massimo Menichinelli’s graduation thesis, developed during 2005 and publicly presented on 6th of April 2006 at the Politecnico di Milano, Faculty of Design. It was a theoretical thesis developed studying the possibility of a role for design in giving support to communities, enabling them to act and improve their conditions. The starting point was the success of Open Source and Peer-to-Peer software, and specially the success of theirs community-based organizational forms. During the following years it has grown both as a website and as a project, with more posts and more guest authors on one side, and more lectures, workshops, publications and other projects on the other side. The goal of this website is to further improve the discussion on using design tools and processes for developing proper and collaborative projects for the communities and territories that will use them.
                             </p>
                             <p>
-                                You can access an archive of the old version of the website
-                                <a href="#">here</a>.
+                                You can access an archive of the old version of the website <a href="#">here</a>.
                             </p>
                         </div>
                     </div>
@@ -183,18 +189,37 @@
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <a name="about"></a>
+                            <a name="openp2pdesign"></a>
                             <img class="img-fluid" src="media/04.open.design.system.map.jpg">
                         </div>
                         <div class="col-6">
                             <p>
-                                Open P2P Design is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it
-                                for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
+                                <strong>Open P2P Design</strong> is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
                                 Government), enterprises (Enterprise 2.0 and Open Business) or Design (Open Design).
                             </p>
                             <p>
-                                The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active
-                                participation of communities.
+                                The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active participation of communities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>OpenMetaDesign</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a name="openmetadesign"></a>
+                            <img class="img-fluid" src="media/04.open.design.system.map.jpg">
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                <strong>Open P2P Design</strong> is a community-centered design methodology for co-designing with a community open and p2p organizational forms with an open and p2p design process. It’s a way to co-design a collaborative activity with/for a community that can use it for self-organizing itself and solve its specific problems. Open P2P Design starts from Service Design and it’s aimed at collaborative activities, and therefore it can be applied to a broad range of activities: public services and policies (Open
+                                Government), enterprises (Enterprise 2.0 and Open Business) or Design (Open Design).
+                            </p>
+                            <p>
+                                The main idea behind Open P2P Design is that technology, tools and the sharing of information alone are not enough for setting up successful open organizations, and that we can co-design such open organizations, tools and technologies with the active participation of communities.
                             </p>
                         </div>
                     </div>
@@ -260,11 +285,6 @@
                         <!-- Do not touch this! -->
                         <!-- Bootstrap core JavaScript ================================================== -->
                         <!-- Placed at the end of the document so the pages load faster -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
-                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
-                        <script>
-                            const Cite = require('citation-js');
-                        </script>
                         <script src="pubs.js"></script>
                         <script src="pubsviz.js"></script>
                     </body>

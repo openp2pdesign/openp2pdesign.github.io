@@ -1,0 +1,19 @@
+[{
+    "id": "01",
+    "bibtex": "01.bib",
+    "year": "2006",
+    "description": "...",
+    "image": "...",
+    "pdf": "...",
+    "keywords": ["1", "2"]
+},
+{
+    "id": "02",
+    "bibtex": "02.bib",
+    "year": "2007",
+    "description": "...",
+    "image": "...",
+    "pdf": "...",
+    "keywords": ["1", "2"]
+}
+]
