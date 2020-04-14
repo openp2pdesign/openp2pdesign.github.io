@@ -139,7 +139,7 @@ p a:hover, h3 a:hover {
     text-decoration: none;
     color: #000;
     transition: 0.7s;
-    background-color: #fff3eb !important;
+    background-color: #ffdec8 !important;
 }
 
 .navbar a {
@@ -274,20 +274,23 @@ strong {
 }
 
 .publink {
+    font-family: "Dosis";
+    font-weight: 600;
     background-color: #fff3eb !important;
     border: 2px dashed #ff6600;
     text-decoration: none;
     color: #000;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 0px 2px 0px;
 
 }
 
 .publink:hover {
     text-decoration: none;
-    color: #000;
+    color: #ff6600;
     background-color: #ffdec8 !important;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 /* bibtex style */
