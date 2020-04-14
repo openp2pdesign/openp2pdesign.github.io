@@ -266,6 +266,12 @@ strong {
     font-size: 1.1em;
 }
 
+.p-2 strong {
+    font-family: "Dosis";
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
 /* bibtex style */
 
 h2.title {
