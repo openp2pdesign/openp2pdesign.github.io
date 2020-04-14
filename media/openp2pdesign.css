@@ -138,6 +138,7 @@ p a, h3 a {
 p a:hover, h3 a:hover {
     text-decoration: none;
     color: #000;
+    transition: 0.7s;
     background-color: #fff3eb !important;
 }
 
@@ -270,6 +271,23 @@ strong {
     font-family: "Dosis";
     font-size: 1.1em;
     font-weight: 500;
+}
+
+.publink {
+    background-color: #fff3eb !important;
+    border: 2px dashed #ff6600;
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.publink:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffdec8 !important;
+    transition: 0.7s;
 }
 
 /* bibtex style */
