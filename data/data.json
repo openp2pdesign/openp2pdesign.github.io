@@ -1,5 +1,6 @@
 [{
     "id": "01",
+    "type": "MSc thesis",
     "bibtex": "01.bib",
     "year": "2006",
     "description": "...",
@@ -9,6 +10,7 @@
 },
 {
     "id": "02",
+    "type": "Conference paper",
     "bibtex": "02.bib",
     "year": "2007",
     "description": "...",

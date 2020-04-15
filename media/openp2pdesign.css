@@ -334,6 +334,15 @@ strong {
     color: #4f4f4f;
 }
 
+.normal-icons i {
+    font-size: 1.0em;
+}
+.normal-icons i:hover {
+    font-size: 1.0em;
+    color: #ff6600;
+}
+
+
 /* bibtex style */
 
 h2.title {

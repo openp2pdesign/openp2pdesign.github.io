@@ -70,6 +70,10 @@ d3.json("data/data.json")
                     console.log(item.image);
                     // Add the citation in APA style
                     pubDiv.append("p").html(output);
+                    // Add the type
+                    pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-book"></i> '+item.type+'</span>');
+                    // Add the keywords
+                    pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> '+item.keywords+'</span>');
                     // Add the description
                     pubDiv.append("p").attr("class","pub-description").html(item.description);
                     // Button for downloading the publication
