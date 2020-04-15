@@ -202,17 +202,21 @@ i {
     font-size: 32px;
 }
 
-i a, i a:hover, .inline-links a, .inline-links a:hover {
+i:hover {
+    color: #fff;
+}
+
+i a, i a:hover, .inline-links a, .inline-links a:hover, .pubstyle a, .pubstyle a:hover {
     border-bottom: 0px solid #fff !important;
     text-decoration: none;
 }
 
 #pubs {
     min-height: 500px;
-    border: 1px solid red;
+    padding: 10px;
 }
 
-#pubs i {
+.csl-entry i {
     color: #000;
     font-size: 1.0em;
 }
@@ -246,6 +250,29 @@ i a, i a:hover, .inline-links a, .inline-links a:hover {
     color: #fff !important;
     background: #ff6600 !important;
     transition: 0.7s;
+}
+
+#pubs button {
+    color: #ff6600 !important;
+    background-color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+#pubs button:hover {
+    color: #fff !important;
+    background: #ff6600 !important;
+    transition: 0.7s;
+}
+
+#pubs button:hover i {
+  color: #fff;
+}
+
+.pubdiv {
+    margin-bottom: 50px;
 }
 
 .profile h3 {
@@ -291,6 +318,10 @@ strong {
     background-color: #ffdec8 !important;
     transition: 0.7s;
     cursor: pointer;
+}
+
+.pubstyle {
+    margin-right: 10px;
 }
 
 /* bibtex style */
