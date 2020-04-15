@@ -66,8 +66,9 @@ d3.json("data/data.json")
                     // Add the div of the publication
                     pubDiv = d3.select("#pubs").append('div').attr("class","pubdiv");
                     // Add the image
-                    pubDiv.append("p").append("img").attr("src","data/"+item.image);
-                    console.log(item.image);
+                    if (item.image) {
+                        pubDiv.append("p").append("img").attr("src","data/"+item.image);
+                    }
                     // Add the citation in APA style
                     pubDiv.append("p").html(output);
                     // Add the type

@@ -4,8 +4,8 @@
     "bibtex": "01.bib",
     "year": "2006",
     "description": "...",
-    "image": "...",
-    "pdf": "...",
+    "image": "",
+    "pdf": "",
     "keywords": ["1", "2"]
 },
 {
@@ -14,8 +14,8 @@
     "bibtex": "02.bib",
     "year": "2007",
     "description": "...",
-    "image": "...",
-    "pdf": "...",
+    "image": "",
+    "pdf": "",
     "keywords": ["1", "2"]
 }
 ]
