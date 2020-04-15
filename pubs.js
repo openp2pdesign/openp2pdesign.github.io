@@ -1,4 +1,4 @@
-d3.select("#pubs").style("background-color", "#cfedba");
+d3.select("#pubs").style("background-color", "#fff");
 
 d3.json("data/data.json")
     .then(data => {
@@ -65,8 +65,12 @@ d3.json("data/data.json")
                     });
                     // Add the div of the publication
                     pubDiv = d3.select("#pubs").append('div').attr("class","pubdiv");
+                    // Add the image
+                    pubDiv.append("p").append("img").html(item.image);
                     // Add the citation in APA style
                     pubDiv.append("p").html(output);
+                    // Add the description
+                    pubDiv.append("p").attr("class","pub-description").html(item.description);
                     // Button for downloading the publication
                     pubDiv.append('a').attr("href","data/"+item.pdf).html('<button type="button" class="btn btn-primary">Article <i class="fas fa-file-pdf"></i></button>');
                     // Button for downloading the reference

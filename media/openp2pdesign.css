@@ -329,6 +329,11 @@ strong {
     height: 10px;
 }
 
+.pub-description {
+    font-style: italic;
+    color: #4f4f4f;
+}
+
 /* bibtex style */
 
 h2.title {
