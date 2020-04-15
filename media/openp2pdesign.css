@@ -272,7 +272,7 @@ i a, i a:hover, .inline-links a, .inline-links a:hover, .pubstyle a, .pubstyle a
 }
 
 .pubdiv {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .profile h3 {
@@ -322,6 +322,11 @@ strong {
 
 .pubstyle {
     margin-right: 10px;
+}
+
+#pubs .collapse-separator {
+    margin-top: 20px;
+    height: 10px;
 }
 
 /* bibtex style */
