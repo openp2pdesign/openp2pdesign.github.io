@@ -78,7 +78,9 @@ d3.json("data/data.json")
                     // Add the description
                     pubDiv.append("p").attr("class","pub-description").html(item.description);
                     // Button for downloading the publication
-                    pubDiv.append('a').attr("href","data/"+item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
+                    if (item.pdf) {
+                        pubDiv.append('a').attr("href","data/"+item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
+                    }
                     // Button for downloading the reference
                     pubDiv.append('a').attr("href","data/"+item.bibtex).html('<button type="button" class="btn btn-primary">Reference file <i class="fas fa-download"></i></button>');
                     // Button for collapsible reference
