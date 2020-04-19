@@ -28,6 +28,10 @@ d3.json("data/data.json")
 
         function onYearsChange() {
             yearSelection = d3.select(this).property('value');
+            yearTypeFilter();
+        };
+
+        function yearTypeFilter() {
             if (yearSelection == "All years") {
                 var filtered = data.filter(function(d) {
                    return d.type == typeSelection;
@@ -44,7 +48,7 @@ d3.json("data/data.json")
             data2 = filtered;
             previousYear = "2005"
             pubsPlot();
-        };
+        }
 
         // Add a filter for type
         var pubsType = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
@@ -65,22 +69,7 @@ d3.json("data/data.json")
 
         function onTypeChange() {
             typeSelection = d3.select(this).property('value');
-            if (yearSelection == "All years") {
-                var filtered = data.filter(function(d) {
-                   return d.type == typeSelection;
-                });
-            } else if (typeSelection == "All types") {
-                var filtered = data.filter(function(d) {
-                   return d.year == yearSelection;
-                });
-            } else {
-                var filtered = data.filter(function(d) {
-                   return d.type == typeSelection && d.year == yearSelection;
-                });
-            }
-            data2 = filtered;
-            previousYear = "2005"
-            pubsPlot();
+            yearTypeFilter();
         };
 
         // Filter publications
