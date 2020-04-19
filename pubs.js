@@ -1,3 +1,5 @@
+var previousYear = "2005";
+
 d3.json("data/data.json")
     .then(data => {
 
@@ -115,11 +117,15 @@ d3.json("data/data.json")
         data.forEach(function(item) {
             library.push(item.bibtex);
         });
+
         // For each item in the data array
         data.forEach(function(item) {
             // load the bibtex
             d3.text("data/" + item.bibtex)
                 .then(bibtex => {
+                    thisYear = item.year;
+
+
                     let bibcontent = bibtex;
                     let example = new Cite(bibtex);
                     let output = example.format('bibliography', {
@@ -127,6 +133,11 @@ d3.json("data/data.json")
                         template: 'apa',
                         lang: 'en-US'
                     });
+                    // Add the div of the year
+                    if (thisYear !== previousYear) {
+                        pubYearDiv = d3.select("#pubs").append('div').attr("class", "pubyeardiv");
+                        pubYearDiv.append("h2").html(thisYear);
+                    }
                     // Add the div of the publication
                     pubDiv = d3.select("#pubs").append('div').attr("class", "pubdiv");
                     // Add the image
@@ -153,6 +164,10 @@ d3.json("data/data.json")
                     // Collapsible reference
                     pubDiv.append("div").attr("class", "collapse-separator");
                     pubDiv.append("div").attr("class", "collapse").attr("id", idToCollapse).append("div").attr("class", "card card-body").append("pre").attr("class", "bibtex").html(bibcontent);
+
+                    if (previousYear !== thisYear) {
+                        previousYear = thisYear;
+                    }
                 });
 
         });

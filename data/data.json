@@ -17,5 +17,25 @@
     "image": "",
     "pdf": "",
     "keywords": ["1", "2"]
+},
+{
+    "id": "03",
+    "type": "Conference paper",
+    "bibtex": "03.bib",
+    "year": "2018",
+    "description": "...",
+    "image": "",
+    "pdf": "",
+    "keywords": ["1", "2"]
+},
+{
+    "id": "04",
+    "type": "Conference paper",
+    "bibtex": "04.bib",
+    "year": "2018",
+    "description": "...",
+    "image": "",
+    "pdf": "",
+    "keywords": ["1", "2"]
 }
 ]

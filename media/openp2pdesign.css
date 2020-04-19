@@ -342,6 +342,12 @@ strong {
     color: #ff6600;
 }
 
+.pubyeardiv {
+    border-top: 1px dashed #37abc8;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 
 /* bibtex style */
 
