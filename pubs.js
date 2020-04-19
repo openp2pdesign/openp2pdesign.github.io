@@ -20,7 +20,10 @@ d3.json("data/data.json")
 
         function onYearsChange() {
             selectValue = d3.select(this).property('value');
-            console.log(selectValue);
+            var filtered = data.filter(function(d) {
+               return d.year == selectValue;
+            });
+            console.log(selectValue, filtered);
         };
 
         // Add a filter for type
@@ -42,7 +45,10 @@ d3.json("data/data.json")
 
         function onTypeChange() {
             selectValue = d3.select(this).property('value');
-            console.log(selectValue);
+            var filtered = data.filter(function(d) {
+               return d.type == selectValue;
+            });
+            console.log(selectValue, filtered);
         };
 
         // Add a filter button
