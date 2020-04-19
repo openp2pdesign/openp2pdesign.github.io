@@ -1,10 +1,14 @@
+// Global variable for years
 var previousYear = "2005";
 
 d3.json("data/data.json")
     .then(data => {
 
+        var data2 = data;
+        pubsPlot();
+
         // Add a filter for years
-        var pubsYears = ["2006", "2007", "2008", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+        var pubsYears = ["All years", "2006", "2007", "2008", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
 
         var select = d3.select('#pubsfilter')
             .append('select')
@@ -22,14 +26,19 @@ d3.json("data/data.json")
 
         function onYearsChange() {
             selectValue = d3.select(this).property('value');
-            var filtered = data.filter(function(d) {
-               return d.year == selectValue;
-            });
-            console.log(selectValue, filtered);
+            if (selectValue !== "All years") {
+                var filtered = data.filter(function(d) {
+                   return d.year == selectValue;
+                });
+                data2 = filtered;
+            } else {
+                data2 = data;
+            }
+            pubsPlot();
         };
 
         // Add a filter for type
-        var pubsType = ["Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
+        var pubsType = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
 
         var select = d3.select('#pubsfilter')
             .append('select')
@@ -47,10 +56,15 @@ d3.json("data/data.json")
 
         function onTypeChange() {
             selectValue = d3.select(this).property('value');
-            var filtered = data.filter(function(d) {
-               return d.type == selectValue;
-            });
-            console.log(selectValue, filtered);
+            if (selectValue !== "All types") {
+                var filtered = data.filter(function(d) {
+                   return d.type == selectValue;
+                });
+                data2 = filtered;
+            } else {
+                data2 = data;
+            }
+            pubsPlot();
         };
 
         // Add a filter button
@@ -118,59 +132,66 @@ d3.json("data/data.json")
             library.push(item.bibtex);
         });
 
-        // For each item in the data array
-        data.forEach(function(item) {
-            // load the bibtex
-            d3.text("data/" + item.bibtex)
-                .then(bibtex => {
-                    thisYear = item.year;
+        function pubsPlot() {
+            // Reset
+            d3.select("#pubs").html("");
+
+            // For each item in the data array
+            data2.forEach(function(item) {
+                // load the bibtex
+                d3.text("data/" + item.bibtex)
+                    .then(bibtex => {
+                        thisYear = item.year;
 
 
-                    let bibcontent = bibtex;
-                    let example = new Cite(bibtex);
-                    let output = example.format('bibliography', {
-                        format: 'html',
-                        template: 'apa',
-                        lang: 'en-US'
+                        let bibcontent = bibtex;
+                        let example = new Cite(bibtex);
+                        let output = example.format('bibliography', {
+                            format: 'html',
+                            template: 'apa',
+                            lang: 'en-US'
+                        });
+                        // Add the div of the year
+                        if (thisYear !== previousYear) {
+                            pubYearDiv = d3.select("#pubs").append('div').attr("class", "pubyeardiv");
+                            pubYearDiv.append("h2").html(thisYear);
+                        }
+                        // Add the div of the publication
+                        pubDiv = d3.select("#pubs").append('div').attr("class", "pubdiv");
+                        // Add the image
+                        if (item.image) {
+                            pubDiv.append("p").append("img").attr("src", "data/" + item.image);
+                        }
+                        // Add the citation in APA style
+                        pubDiv.append("p").html(output);
+                        // Add the type
+                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-book"></i> ' + item.type + '</span>');
+                        // Add the keywords
+                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + item.keywords + '</span>');
+                        // Add the description
+                        pubDiv.append("p").attr("class", "pub-description").html(item.description);
+                        // Button for downloading the publication
+                        if (item.pdf) {
+                            pubDiv.append('a').attr("href", "data/" + item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
+                        }
+                        // Button for downloading the reference
+                        pubDiv.append('a').attr("href", "data/" + item.bibtex).html('<button type="button" class="btn btn-primary">Reference file <i class="fas fa-download"></i></button>');
+                        // Button for collapsible reference
+                        idToCollapse = "iD" + item.bibtex.replace('.', '');
+                        pubDiv.append('button').attr("class", "btn btn-primary").attr("type", "button").attr("data-toggle", "collapse").attr("data-target", "#" + idToCollapse).attr("aria-expanded", "false").attr("aria-controls", idToCollapse).html('Reference code <i class="fas fa-code"></i>');
+                        // Collapsible reference
+                        pubDiv.append("div").attr("class", "collapse-separator");
+                        pubDiv.append("div").attr("class", "collapse").attr("id", idToCollapse).append("div").attr("class", "card card-body").append("pre").attr("class", "bibtex").html(bibcontent);
+
+                        if (previousYear !== thisYear) {
+                            previousYear = thisYear;
+                        }
                     });
-                    // Add the div of the year
-                    if (thisYear !== previousYear) {
-                        pubYearDiv = d3.select("#pubs").append('div').attr("class", "pubyeardiv");
-                        pubYearDiv.append("h2").html(thisYear);
-                    }
-                    // Add the div of the publication
-                    pubDiv = d3.select("#pubs").append('div').attr("class", "pubdiv");
-                    // Add the image
-                    if (item.image) {
-                        pubDiv.append("p").append("img").attr("src", "data/" + item.image);
-                    }
-                    // Add the citation in APA style
-                    pubDiv.append("p").html(output);
-                    // Add the type
-                    pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-book"></i> ' + item.type + '</span>');
-                    // Add the keywords
-                    pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + item.keywords + '</span>');
-                    // Add the description
-                    pubDiv.append("p").attr("class", "pub-description").html(item.description);
-                    // Button for downloading the publication
-                    if (item.pdf) {
-                        pubDiv.append('a').attr("href", "data/" + item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
-                    }
-                    // Button for downloading the reference
-                    pubDiv.append('a').attr("href", "data/" + item.bibtex).html('<button type="button" class="btn btn-primary">Reference file <i class="fas fa-download"></i></button>');
-                    // Button for collapsible reference
-                    idToCollapse = "iD" + item.bibtex.replace('.', '');
-                    pubDiv.append('button').attr("class", "btn btn-primary").attr("type", "button").attr("data-toggle", "collapse").attr("data-target", "#" + idToCollapse).attr("aria-expanded", "false").attr("aria-controls", idToCollapse).html('Reference code <i class="fas fa-code"></i>');
-                    // Collapsible reference
-                    pubDiv.append("div").attr("class", "collapse-separator");
-                    pubDiv.append("div").attr("class", "collapse").attr("id", idToCollapse).append("div").attr("class", "card card-body").append("pre").attr("class", "bibtex").html(bibcontent);
 
-                    if (previousYear !== thisYear) {
-                        previousYear = thisYear;
-                    }
-                });
+            });
+        };
 
-        });
+
 
 
     })
