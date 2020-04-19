@@ -37,5 +37,15 @@
     "image": "",
     "pdf": "",
     "keywords": ["1", "2"]
+},
+{
+    "id": "05",
+    "type": "Book",
+    "bibtex": "05.bib",
+    "year": "2018",
+    "description": "...",
+    "image": "",
+    "pdf": "",
+    "keywords": ["1", "2"]
 }
 ]

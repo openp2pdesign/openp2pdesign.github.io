@@ -1,5 +1,7 @@
-// Global variable for years
+// Global variables
 var previousYear = "2005";
+var yearSelection = "All years";
+var typeSelection = "All types";
 
 d3.json("data/data.json")
     .then(data => {
@@ -25,15 +27,22 @@ d3.json("data/data.json")
             });
 
         function onYearsChange() {
-            selectValue = d3.select(this).property('value');
-            if (selectValue !== "All years") {
+            yearSelection = d3.select(this).property('value');
+            if (yearSelection == "All years") {
                 var filtered = data.filter(function(d) {
-                   return d.year == selectValue;
+                   return d.type == typeSelection;
                 });
-                data2 = filtered;
+            } else if (typeSelection == "All types") {
+                var filtered = data.filter(function(d) {
+                   return d.year == yearSelection;
+                });
             } else {
-                data2 = data;
+                var filtered = data.filter(function(d) {
+                   return d.type == typeSelection && d.year == yearSelection;
+                });
             }
+            data2 = filtered;
+            previousYear = "2005"
             pubsPlot();
         };
 
@@ -55,32 +64,24 @@ d3.json("data/data.json")
             });
 
         function onTypeChange() {
-            selectValue = d3.select(this).property('value');
-            if (selectValue !== "All types") {
+            typeSelection = d3.select(this).property('value');
+            if (yearSelection == "All years") {
                 var filtered = data.filter(function(d) {
-                   return d.type == selectValue;
+                   return d.type == typeSelection;
                 });
-                data2 = filtered;
+            } else if (typeSelection == "All types") {
+                var filtered = data.filter(function(d) {
+                   return d.year == yearSelection;
+                });
             } else {
-                data2 = data;
+                var filtered = data.filter(function(d) {
+                   return d.type == typeSelection && d.year == yearSelection;
+                });
             }
+            data2 = filtered;
+            previousYear = "2005"
             pubsPlot();
         };
-
-        // Add a filter button
-        var select = d3.select('#pubsfilter')
-            .append('div')
-            .attr('class', 'input-group-append')
-            .append('label')
-            .attr('class', 'input-group-text')
-            .attr('for', 'pubsfilter')
-            .html("Filter")
-            .on('click', onFilterButton)
-
-        function onFilterButton() {
-            console.log("Filter");
-        };
-
 
         // Filter publications
         $("#link_metadesign").click(function() {
