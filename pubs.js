@@ -9,6 +9,54 @@ d3.json("data/data.json")
         var data2 = data;
         pubsPlot();
 
+        // Function for filtering publications by year and type
+        function yearTypeFilter() {
+            if (yearSelection == "All years" && typeSelection == "All types") {
+                console.log("pi");
+                var filtered = data;
+            }
+            else if (yearSelection == "All years" && typeSelection !== "All types") {
+                var filtered = data.filter(function(d) {
+                    return d.type == typeSelection;
+                });
+            } else if (typeSelection == "All types" && yearSelection !== "All years") {
+                var filtered = data.filter(function(d) {
+                    return d.year == yearSelection;
+                });
+            } else {
+                var filtered = data.filter(function(d) {
+                    return d.type == typeSelection && d.year == yearSelection;
+                });
+            }
+            data2 = filtered;
+            previousYear = "2005"
+            pubsPlot();
+        }
+
+        // Function for filtering publications by keyword
+        function keywordFilter(keyword) {
+            if (yearSelection == "All years" && typeSelection == "All types") {
+                console.log("pi");
+                var filtered = data;
+            }
+            else if (yearSelection == "All years" && typeSelection !== "All types") {
+                var filtered = data.filter(function(d) {
+                    return d.type == typeSelection;
+                });
+            } else if (typeSelection == "All types" && yearSelection !== "All years") {
+                var filtered = data.filter(function(d) {
+                    return d.year == yearSelection;
+                });
+            } else {
+                var filtered = data.filter(function(d) {
+                    return d.type == typeSelection && d.year == yearSelection;
+                });
+            }
+            data2 = filtered;
+            previousYear = "2005"
+            pubsPlot();
+        }
+
         // Add a filter for years
         var pubsYears = ["All years", "2006", "2007", "2008", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
 
@@ -30,25 +78,6 @@ d3.json("data/data.json")
             yearSelection = d3.select(this).property('value');
             yearTypeFilter();
         };
-
-        function yearTypeFilter() {
-            if (yearSelection == "All years") {
-                var filtered = data.filter(function(d) {
-                   return d.type == typeSelection;
-                });
-            } else if (typeSelection == "All types") {
-                var filtered = data.filter(function(d) {
-                   return d.year == yearSelection;
-                });
-            } else {
-                var filtered = data.filter(function(d) {
-                   return d.type == typeSelection && d.year == yearSelection;
-                });
-            }
-            data2 = filtered;
-            previousYear = "2005"
-            pubsPlot();
-        }
 
         // Add a filter for type
         var pubsType = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
@@ -75,6 +104,7 @@ d3.json("data/data.json")
         // Filter publications
         $("#link_metadesign").click(function() {
             console.log("Link on meta-design publications clicked.");
+            keywordFilter("1");
         });
         $("#link_platforms").click(function() {
             console.log("Link on platforms publications clicked.");
@@ -132,8 +162,6 @@ d3.json("data/data.json")
                 d3.text("data/" + item.bibtex)
                     .then(bibtex => {
                         thisYear = item.year;
-
-
                         let bibcontent = bibtex;
                         let example = new Cite(bibtex);
                         let output = example.format('bibliography', {
