@@ -14,8 +14,7 @@ d3.json("data/data.json")
             if (yearSelection == "All years" && typeSelection == "All types") {
                 console.log("pi");
                 var filtered = data;
-            }
-            else if (yearSelection == "All years" && typeSelection !== "All types") {
+            } else if (yearSelection == "All years" && typeSelection !== "All types") {
                 var filtered = data.filter(function(d) {
                     return d.type == typeSelection;
                 });
@@ -35,23 +34,12 @@ d3.json("data/data.json")
 
         // Function for filtering publications by keyword
         function keywordFilter(keyword) {
-            if (yearSelection == "All years" && typeSelection == "All types") {
-                console.log("pi");
-                var filtered = data;
-            }
-            else if (yearSelection == "All years" && typeSelection !== "All types") {
-                var filtered = data.filter(function(d) {
-                    return d.type == typeSelection;
+            keywords = [keyword]
+            var filtered = data2.filter(function(pub) {
+                return pub.keywords.some(function(tag) {
+                    return keywords.includes(tag);
                 });
-            } else if (typeSelection == "All types" && yearSelection !== "All years") {
-                var filtered = data.filter(function(d) {
-                    return d.year == yearSelection;
-                });
-            } else {
-                var filtered = data.filter(function(d) {
-                    return d.type == typeSelection && d.year == yearSelection;
-                });
-            }
+            });
             data2 = filtered;
             previousYear = "2005"
             pubsPlot();
@@ -103,8 +91,9 @@ d3.json("data/data.json")
 
         // Filter publications
         $("#link_metadesign").click(function() {
+            keywordFilter("3");
             console.log("Link on meta-design publications clicked.");
-            keywordFilter("1");
+
         });
         $("#link_platforms").click(function() {
             console.log("Link on platforms publications clicked.");
