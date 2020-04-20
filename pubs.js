@@ -35,7 +35,7 @@ d3.json("data/data.json")
         // Function for filtering publications by keyword
         function keywordFilter(keyword) {
             keywords = [keyword]
-            var filtered = data2.filter(function(pub) {
+            var filtered = data.filter(function(pub) {
                 return pub.keywords.some(function(tag) {
                     return keywords.includes(tag);
                 });
@@ -91,48 +91,43 @@ d3.json("data/data.json")
 
         // Filter publications
         $("#link_metadesign").click(function() {
-            keywordFilter("3");
-            console.log("Link on meta-design publications clicked.");
-
+            keywordFilter("metadesign");
         });
         $("#link_platforms").click(function() {
-            console.log("Link on platforms publications clicked.");
+            keywordFilter("platforms");
         });
         $("#link_processes").click(function() {
-            console.log("Link on processes publications clicked.");
+            keywordFilter("processes");
         });
         $("#link_networks").click(function() {
-            console.log("Link on networks publications clicked.");
+            keywordFilter("networks");
         });
         $("#link_organizations").click(function() {
-            console.log("Link on organizations publications clicked.");
+            keywordFilter("organizations");
         });
         $("#link_governance").click(function() {
-            console.log("Link on governance publications clicked.");
+            keywordFilter("governance");
         });
         $("#link_socinno").click(function() {
-            console.log("Link on social innovation publications clicked.");
+            keywordFilter("socinno");
         });
         $("#link_socent").click(function() {
-            console.log("Link on social entrepreneurship publications clicked.");
+            keywordFilter("socent");
         });
         $("#link_impact").click(function() {
-            console.log("Link on impact publications clicked.");
+            keywordFilter("impact");
         });
         $("#link_openp2pddd").click(function() {
-            console.log("Link on open,p2p,ddd systems publications clicked.");
+            keywordFilter("openp2pdddd");
         });
         $("#link_local").click(function() {
-            console.log("Link on local publications clicked.");
+            keywordFilter("local");
         });
         $("#link_community").click(function() {
-            console.log("Link on community publications clicked.");
+            keywordFilter("community");
         });
         $("#link_sustainability").click(function() {
-            console.log("Link on sustainability publications clicked.");
-        });
-        $("#link_sustainability").click(function() {
-            console.log("Link on sustainability publications clicked.");
+            keywordFilter("sustainability");
         });
 
         // Create a database of all publication

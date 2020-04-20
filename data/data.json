@@ -6,7 +6,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["1", "2"]
+    "keywords": ["community", "processes", "openp2pddd", "local"]
 },
 {
     "id": "02",
@@ -16,7 +16,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["1", "2"]
+    "keywords": ["community", "processes", "openp2pddd", "local"]
 },
 {
     "id": "03",
@@ -26,7 +26,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["1", "2"]
+    "keywords": ["metadesign", "processes", "platforms"]
 },
 {
     "id": "04",
@@ -36,7 +36,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["1", "2"]
+    "keywords": ["metadesign", "processes", "platforms"]
 },
 {
     "id": "05",
@@ -46,6 +46,6 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["1", "3"]
+    "keywords": ["openp2pddd"]
 }
 ]
