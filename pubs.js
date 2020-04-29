@@ -46,7 +46,7 @@ d3.json("data/data.json")
         }
 
         // Add a filter for years
-        var pubsYears = ["All years", "2006", "2007", "2008", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+        var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
 
         var select = d3.select('#pubsfilter')
             .append('select')

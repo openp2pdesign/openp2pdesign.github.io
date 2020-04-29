@@ -273,6 +273,8 @@ i a, i a:hover, .inline-links a, .inline-links a:hover, .pubstyle a, .pubstyle a
 
 .pubdiv {
     margin-bottom: 40px;
+    border-top: 1px dashed #37abc8;
+    padding-top: 20px;
 }
 
 .profile h3 {
