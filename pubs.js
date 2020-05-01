@@ -368,7 +368,7 @@ d3.json("data/data.json")
             var vlSpec2 = {
                 $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
                 "width": "container",
-                "height": 400,
+                "height": 300,
                 "autosize": {
                     "type": "fit-x",
                     "resize": "true",
@@ -414,7 +414,7 @@ d3.json("data/data.json")
             var vlSpec3 = {
                 $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
                 "width": "container",
-                "height": 400,
+                "height": 300,
                 "autosize": {
                     "type": "fit-x",
                     "resize": "true",
