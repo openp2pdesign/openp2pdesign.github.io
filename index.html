@@ -74,7 +74,7 @@
                         <a class="p-2" href="#research">
                             <strong>research and publications</strong>
                         </a>
-                        on Open Design, FabLab and User-driven Open and Social Innovation initiatives.
+                        on Open Design, FabLab and User-driven Open and Social Innovation initiatives. <span id="short-pubs-overview"></span>
                         <br>
                         The starting point for this research is
                         <a class="p-2" href="#openp2pdesign">
@@ -290,6 +290,16 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
+                                        <div id="pubsviztext"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="pubsviz"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
                                         <img class="img-fluid" src="media/total4.png">
                                     </div>
                                 </div>
@@ -364,11 +374,6 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div id="pubsviz"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
                                         <div id="pubs"></div>
                                     </div>
                                 </div>
@@ -388,6 +393,9 @@
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
                         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/4.10.4/vega-lite.min.js" integrity="sha256-oY1XwyD3yE7V3SXacVWJexar7fohyBg3DyrlWlKKSiY=" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/vega@5.10.1"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.10.4"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.5.2"></script>
                         <script>
                             $(function () {
                                 $('[data-toggle="tooltip"]').tooltip()

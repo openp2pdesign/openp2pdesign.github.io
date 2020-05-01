@@ -2,12 +2,15 @@
 var previousYear = "2005";
 var yearSelection = "All years";
 var typeSelection = "All types";
+var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+var pubsTypes = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
 
 d3.json("data/data.json")
     .then(data => {
 
         var data2 = data;
         pubsPlot();
+
 
         // Function for filtering publications by year and type
         function yearTypeFilter() {
@@ -46,8 +49,6 @@ d3.json("data/data.json")
         }
 
         // Add a filter for years
-        var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
-
         var select = d3.select('#pubsfilter')
             .append('select')
             .attr('class', 'select')
@@ -68,8 +69,6 @@ d3.json("data/data.json")
         };
 
         // Add a filter for type
-        var pubsType = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
-
         var select = d3.select('#pubsfilter')
             .append('select')
             .attr('class', 'select')
@@ -78,7 +77,7 @@ d3.json("data/data.json")
 
         var options = select
             .selectAll('option')
-            .data(pubsType).enter()
+            .data(pubsTypes).enter()
             .append('option')
             .text(function(d) {
                 return d;
