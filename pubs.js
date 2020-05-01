@@ -169,7 +169,7 @@ d3.json("data/data.json")
                         // Add the type
                         pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-book"></i> ' + item.type + '</span>');
                         // Add the keywords
-                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + item.keywords + '</span>');
+                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + item.keywords.join(', ') + '</span>');
                         // Add the description
                         pubDiv.append("p").attr("class", "pub-description").html(item.description);
                         // Button for downloading the publication
