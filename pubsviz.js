@@ -12,7 +12,7 @@ d3.json("data/data.json")
     .then(data => {
         var data2 = data;
 
-        var articleCount = {
+        var articlesCount = {
             "Journal article": 0,
             "Conference paper": 0,
             "Book": 0,
@@ -54,19 +54,45 @@ d3.json("data/data.json")
                 });
             }
         }
+        // Create the structure of the articlesCountStats variable
+        var articlesCountStats = [];
+        for (i = 0; i < pubsTypes.length; i++) {
+                articlesCountStats.push({
+                    "articles": 0,
+                    "type": pubsTypes[i]
+            });
+        }
+        // Create the structure of the yearsCountStats variable
+        var yearsCountStats = [];
+        for (i = 0; i < pubsYears.length; i++) {
+                yearsCountStats.push({
+                    "articles": 0,
+                    "year": pubsYears[i]
+            });
+        }
 
         // Explore the data and extract values
         data2.forEach(e => {
             // Overall count of articles by type
-            for (article in articleCount) {
+            for (article in articlesCount) {
                 if (e["type"] == article) {
-                    articleCount[article]++;
+                    articlesCount[article]++;
+                    for (l = 0; l < articlesCountStats.length; l++) {
+                        if (articlesCountStats[l]["type"] == e["type"]) {
+                            articlesCountStats[l]["articles"]++;
+                        }
+                    }
                 }
             }
             // Overall count of articles by year
             for (year in yearCount) {
                 if (e["year"] == year) {
                     yearCount[year]++;
+                    for (l = 0; l < yearsCountStats.length; l++) {
+                        if (yearsCountStats[l]["year"] == e["year"]) {
+                            yearsCountStats[l]["articles"]++;
+                        }
+                    }
                 }
             }
             // Count of articles by type and year
@@ -74,19 +100,18 @@ d3.json("data/data.json")
                 if (pubsStats[k]["year"] == e["year"] && pubsStats[k]["type"] == e["type"]) {
                     pubsStats[k]["articles"]++;
                 }
-
             }
         });
         // Update text in the page with the stats
-        var scientificArticles = parseInt(articleCount["Journal article"]) + parseInt(articleCount["Conference paper"]);
-        statsText = "Massimo has published several publications so far, including " + scientificArticles + " scientific articles, " + articleCount["Book"] + " books, " + articleCount["Book chapter"] + " chapters, and more."
+        var scientificArticles = parseInt(articlesCount["Journal article"]) + parseInt(articlesCount["Conference paper"]);
+        statsText = "Massimo has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters, and more."
         d3.select("#short-pubs-overview").html(statsText);
         d3.select("#pubsviztext").append("p").html(statsText);
-        // Update the chart in the page with the stats
+        // Update the chart in the page with the stats of articles per year
         var vlSpec = {
             $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
-            "width": 400,
-            "height": 300,
+            "width": 800,
+            "height": 500,
             "config": {
                 "font": "dosis"
             },
@@ -94,8 +119,7 @@ d3.json("data/data.json")
                 "values": pubsStats
             },
             "mark": {
-                "type": "line",
-                "point": true
+                "type": "bar"
             },
             "encoding": {
                 "x": {
@@ -114,6 +138,67 @@ d3.json("data/data.json")
             }
         };
         vegaEmbed('#pubsviz', vlSpec);
+        // Update the chart in the page with the stats of articles
+        var vlSpec2 = {
+            $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+            "width": 800,
+            "height": 500,
+            "config": {
+                "font": "dosis"
+            },
+            "data": {
+                "values": articlesCountStats
+            },
+            "mark": {
+                "type": "bar"
+            },
+            "encoding": {
+                "y": {
+                    "field": "type",
+                    "type": "nominal",
+                },
+                "x": {
+                    "field": "articles",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "type",
+                    "type": "nominal"
+                }
+            }
+        };
+        vegaEmbed('#pubsviz2', vlSpec2);
+        // Update the chart in the page with the stats of articles
+        console.log(yearsCountStats);
+        var vlSpec3 = {
+            $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+            "width": 800,
+            "height": 500,
+            "config": {
+                "font": "dosis"
+            },
+            "data": {
+                "values": yearsCountStats
+            },
+            "mark": {
+                "type": "line"
+            },
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "temporal",
+                },
+                "y": {
+                    "field": "articles",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "type",
+                    "type": "nominal"
+                }
+            }
+        };
+        vegaEmbed('#pubsviz3', vlSpec3);
     }).catch(error => {
         console.error(error);
     });

@@ -221,11 +221,6 @@ i a, i a:hover, .inline-links a, .inline-links a:hover, .pubstyle a, .pubstyle a
     font-size: 1.0em;
 }
 
-#pubsviz {
-    min-height: 400px;
-    border: 1px solid red;
-}
-
 .bibtex {
     color: #888888;
     font-weight: 100;
@@ -348,6 +343,10 @@ strong {
     border-top: 2px dashed #37abc8;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+#pubsviz {
+    width: 100%;
 }
 
 
