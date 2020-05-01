@@ -293,7 +293,7 @@ d3.json("data/data.json")
             d3.select("#pubsviztext").append("p").html(statsText);
             // Update the chart in the page with the stats of articles per year
             var vlSpec = {
-                $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+                "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
                 "width": "container",
                 "height": 400,
                 "autosize": {
@@ -313,44 +313,74 @@ d3.json("data/data.json")
                 "data": {
                     "values": pubsStats
                 },
-                "mark": {
-                    "type": "line",
-                    "point": true
-                },
                 "encoding": {
-                    "x": {
-                        "timeUnit": "year",
-                        "field": "year",
-                        "type": "temporal",
-                        "axis": {
-                            "labelFontSize": 15,
-                            "titleFontSize": 22,
-                            "title": "Time"
-                        }
-                    },
-                    "y": {
-                        "field": "articles",
-                        "type": "quantitative",
-                        "axis": {
-                            "labelFontSize": 15,
-                            "titleFontSize": 22,
-                            "title": "Publications"
-                        }
-                    },
-                    "tooltip": [{
+                    "color": {
+                        "condition": {
+                            "selection": "hover",
                             "field": "type",
                             "type": "nominal"
                         },
-                        {
-                            "field": "articles",
-                            "type": "quantitative"
-                        }
-                    ],
-                    "color": {
-                        "field": "type",
-                        "type": "nominal"
+                        "value": "grey"
+                    },
+                    "opacity": {
+                        "condition": {
+                            "selection": "hover",
+                            "value": 1
+                        },
+                        "value": 0.2
                     }
-                }
+                },
+                "layer": [{
+                    "encoding": {
+                        "x": {
+                            "field": "year",
+                            "type": "temporal",
+                            "axis": {
+                                "labelFontSize": 15,
+                                "titleFontSize": 22,
+                                "title": "Time"
+                            }
+                        },
+                        "y": {
+                            "field": "articles",
+                            "type": "quantitative",
+                            "axis": {
+                                "labelFontSize": 15,
+                                "titleFontSize": 22,
+                                "title": "Publications"
+                            }
+                        },
+                        "tooltip": [{
+                                "field": "type",
+                                "type": "nominal"
+                            },
+                            {
+                                "field": "articles",
+                                "type": "quantitative"
+                            }
+                        ],
+                    },
+                    "layer": [{
+                        "selection": {
+                            "hover": {
+                                "type": "single",
+                                "on": "mouseover",
+                                "empty": "all",
+                                "fields": ["type"]
+                            }
+                        },
+                        "mark": {
+                            "type": "line",
+                            "point": {
+                                "fill": "#fff",
+                                "strokeWidth": 4,
+                            },
+                            "strokeWidth": 2
+                        }
+                    }, {
+                        "mark": "line"
+                    }]
+                }]
             };
             vegaEmbed('#pubsviz1', vlSpec);
             // Update the chart in the page with the stats of articles
