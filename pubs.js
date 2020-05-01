@@ -290,9 +290,10 @@ d3.json("data/data.json")
             // Update text in the page with the stats
             // Overview 0
             var scientificArticles = parseInt(articlesCount["Journal article"]) + parseInt(articlesCount["Conference paper"]);
-            statsText = "Massimo has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more."
+            statsText = "Massimo Menichinelli has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more."
             d3.select("#short-pubs-overview").html(statsText);
             // Overview 1
+            statsText = "Massimo Menichinelli has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more. This section contains a selection of the most relevant publications."
             d3.select("#pubsviztext").append("p").html(statsText);
             // Update the chart in the page with the stats of articles per year
             var vlSpec = {
