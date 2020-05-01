@@ -114,6 +114,9 @@ d3.json("data/data.json")
         $("#link_socent").click(function() {
             keywordFilter("socent");
         });
+        $("#makermovement").click(function() {
+            keywordFilter("makermovement");
+        });
         $("#link_impact").click(function() {
             keywordFilter("impact");
         });
