@@ -10,6 +10,7 @@ d3.json("data/data.json")
 
         var data2 = data;
         pubsPlot();
+        pubsText();
 
 
         // Function for filtering publications by year and type
@@ -135,7 +136,7 @@ d3.json("data/data.json")
             library.push(item.bibtex);
         });
 
-        function pubsPlot() {
+        function pubsText() {
             // Reset
             d3.select("#pubs").html("");
 
@@ -192,8 +193,276 @@ d3.json("data/data.json")
             });
         };
 
+        function pubsPlot() {
+            var articlesCount = {
+                "Journal article": 0,
+                "Conference paper": 0,
+                "Book": 0,
+                "Book chapter": 0,
+                "Thesis": 0,
+                "Report": 0,
+                "Conference poster": 0,
+                "Blog post": 0,
+                "Magazine article": 0,
+                "Software": 0
+            }
 
+            var yearCount = {
+                "2006": 0,
+                "2007": 0,
+                "2008": 0,
+                "2011": 0,
+                "2013": 0,
+                "2014": 0,
+                "2015": 0,
+                "2016": 0,
+                "2017": 0,
+                "2018": 0,
+                "2019": 0,
+                "2020": 0
+            }
 
+            // Remove the "all" values
+            pubsYears.shift();
+            pubsTypes.shift();
+            // Create the structure of the pubsStats variable
+            var pubsStats = []
+            for (i = 0; i < pubsYears.length; i++) {
+                for (j = 0; j < pubsTypes.length; j++) {
+                    pubsStats.push({
+                        "year": pubsYears[i],
+                        "articles": 0,
+                        "type": pubsTypes[j]
+                    });
+                }
+            }
+            // Create the structure of the articlesCountStats variable
+            var articlesCountStats = [];
+            for (i = 0; i < pubsTypes.length; i++) {
+                articlesCountStats.push({
+                    "articles": 0,
+                    "type": pubsTypes[i]
+                });
+            }
+            // Create the structure of the yearsCountStats variable
+            var yearsCountStats = [];
+            for (i = 0; i < pubsYears.length; i++) {
+                yearsCountStats.push({
+                    "articles": 0,
+                    "year": pubsYears[i]
+                });
+            }
+
+            // Explore the data and extract values
+            data2.forEach(e => {
+                // Overall count of articles by type
+                for (article in articlesCount) {
+                    if (e["type"] == article) {
+                        articlesCount[article]++;
+                        for (l = 0; l < articlesCountStats.length; l++) {
+                            if (articlesCountStats[l]["type"] == e["type"]) {
+                                articlesCountStats[l]["articles"]++;
+                            }
+                        }
+                    }
+                }
+                // Overall count of articles by year
+                for (year in yearCount) {
+                    if (e["year"] == year) {
+                        yearCount[year]++;
+                        for (l = 0; l < yearsCountStats.length; l++) {
+                            if (yearsCountStats[l]["year"] == e["year"]) {
+                                yearsCountStats[l]["articles"]++;
+                            }
+                        }
+                    }
+                }
+                // Count of articles by type and year
+                for (k = 0; k < pubsStats.length; k++) {
+                    if (pubsStats[k]["year"] == e["year"] && pubsStats[k]["type"] == e["type"]) {
+                        pubsStats[k]["articles"]++;
+                    }
+                }
+            });
+            // Update text in the page with the stats
+            // Overview 0
+            var scientificArticles = parseInt(articlesCount["Journal article"]) + parseInt(articlesCount["Conference paper"]);
+            statsText = "Massimo has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more."
+            d3.select("#short-pubs-overview").html(statsText);
+            // Overview 1
+            d3.select("#pubsviztext").append("p").html(statsText);
+            // Update the chart in the page with the stats of articles per year
+            var vlSpec = {
+                $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+                "width": "container",
+                "height": 400,
+                "autosize": {
+                    "type": "fit-x",
+                    "resize": "true",
+                    "contains": "content"
+                },
+                "config": {
+                    "font": "dosis",
+                    "legend": {
+                        "labelFontSize": 15,
+                        "titleFontSize": 22,
+                        "title": null,
+                        "orient": "bottom"
+                    },
+                },
+                "data": {
+                    "values": pubsStats
+                },
+                "mark": {
+                    "type": "line",
+                    "point": true
+                },
+                "encoding": {
+                    "x": {
+                        "timeUnit": "year",
+                        "field": "year",
+                        "type": "temporal",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Time"
+                        }
+                    },
+                    "y": {
+                        "field": "articles",
+                        "type": "quantitative",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Publications"
+                        }
+                    },
+                    "tooltip": [{
+                            "field": "type",
+                            "type": "nominal"
+                        },
+                        {
+                            "field": "articles",
+                            "type": "quantitative"
+                        }
+                    ],
+                    "color": {
+                        "field": "type",
+                        "type": "nominal"
+                    }
+                }
+            };
+            vegaEmbed('#pubsviz1', vlSpec);
+            // Update the chart in the page with the stats of articles
+            var vlSpec2 = {
+                $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+                "width": "container",
+                "height": 400,
+                "autosize": {
+                    "type": "fit-x",
+                    "resize": "true",
+                    "contains": "content"
+                },
+                "config": {
+                    "font": "dosis"
+                },
+                "data": {
+                    "values": articlesCountStats
+                },
+                "mark": {
+                    "type": "bar"
+                },
+                "encoding": {
+                    "y": {
+                        "field": "type",
+                        "type": "nominal",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Type"
+                        }
+                    },
+                    "x": {
+                        "field": "articles",
+                        "type": "quantitative",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Number"
+                        },
+                    },
+                    "color": {
+                        "field": "type",
+                        "type": "nominal",
+                        "legend": null
+                    }
+                }
+            };
+            vegaEmbed('#pubsviz2', vlSpec2);
+            // Update the chart in the page with the stats of articles
+            var vlSpec3 = {
+                $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+                "width": "container",
+                "height": 400,
+                "autosize": {
+                    "type": "fit-x",
+                    "resize": "true",
+                    "contains": "content"
+                },
+                "config": {
+                    "font": "dosis"
+                },
+                "data": {
+                    "values": yearsCountStats
+                },
+                "mark": {
+                    "type": "area",
+                    "interpolate": "monotone",
+                    "point": {
+                        "filled": false,
+                        "fill": "#fff"
+                    },
+                    "color": {
+                        "x1": 1,
+                        "y1": 1,
+                        "x2": 1,
+                        "y2": 0,
+                        "gradient": "linear",
+                        "stops": [{
+                                "offset": 0,
+                                "color": "white"
+                            },
+                            {
+                                "offset": 1,
+                                "color": "#ff6600"
+                            }
+                        ]
+                    }
+                },
+                "encoding": {
+                    "x": {
+                        "field": "year",
+                        "type": "temporal",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Time"
+                        },
+                    },
+                    "y": {
+                        "legend": null,
+                        "field": "articles",
+                        "type": "quantitative",
+                        "axis": {
+                            "labelFontSize": 15,
+                            "titleFontSize": 22,
+                            "title": "Publications"
+                        },
+                    },
+                }
+            };
+            vegaEmbed('#pubsviz3', vlSpec3);
+        }
 
     })
     .catch(error => {
