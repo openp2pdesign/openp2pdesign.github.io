@@ -172,7 +172,28 @@ d3.json("data/data.json")
                         // Add the type
                         pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-book"></i> ' + item.type + '</span>');
                         // Add the keywords
-                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + item.keywords.join(', ') + '</span>');
+                        // Translate the keywords into human-readable terms
+                        keywordsTerms = []
+                        for (i = 0; i < item.keywords.length; i++) {
+                            if (item.keywords[i] == "socinno") {
+                                keywordsTerms.push("Social Innovation");
+                            } else if (item.keywords[i] == "socent") {
+                                keywordsTerms.push("Entrepreneurship");
+                            } else if (item.keywords[i] == "makermovement") {
+                                keywordsTerms.push("Maker Movement and Fab Lab community");
+                            } else if (item.keywords[i] == "openp2pddd") {
+                                keywordsTerms.push("Open Source / Peer-to-Peer / Diffuse, Decentralized, Distributed Systems");
+                            } else if (item.keywords[i] == "local") {
+                                keywordsTerms.push("Local dimension of territories connected through global networks");
+                            } else if (item.keywords[i] == "community") {
+                                keywordsTerms.push("Community-based collaborative ecosystems");
+                            } else if (item.keywords[i] == "sustainability") {
+                                keywordsTerms.push("Sustainability / resilience / transition / regeneration");
+                            } else {
+                                keywordsTerms.push(item.keywords[i].charAt(0).toUpperCase() + item.keywords[i].slice(1));
+                            }
+                        }
+                        pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + keywordsTerms.join(', ') + '</span>');
                         // Add the description
                         pubDiv.append("p").attr("class", "pub-description").html(item.description);
                         // Button for downloading the publication
@@ -320,8 +341,8 @@ d3.json("data/data.json")
                     "type": "line",
                     "strokeWidth": 3,
                     "point": {
-                    "filled": true
-                }
+                        "filled": true
+                    }
                 },
                 "selection": {
                     "publicationType": {

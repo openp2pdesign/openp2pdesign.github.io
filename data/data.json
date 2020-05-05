@@ -171,7 +171,7 @@
 {
     "id": "06_8",
     "type": "Blog post",
-    "bibtex": "2013l.bib",
+    "bibtex": "2013h.bib",
     "year": "2013",
     "description": "...",
     "image": "",
@@ -181,7 +181,7 @@
 {
     "id": "06_8",
     "type": "Blog post",
-    "bibtex": "2013m.bib",
+    "bibtex": "2013i.bib",
     "year": "2013",
     "description": "...",
     "image": "",
@@ -616,6 +616,6 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["makermovement","processes"]
+    "keywords": ["makermovement","processes","community"]
 }
 ]
