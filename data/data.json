@@ -36,7 +36,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["metadesign", "processes"]
 },
 {
     "id": "03_2",
@@ -46,7 +46,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["makermovement", "platforms", "socent"]
 },
 {
     "id": "03_3",
@@ -56,7 +56,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["makermovement", "platforms", "socent"]
 },
 {
     "id": "03_4",
@@ -66,7 +66,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["makermovement", "platforms", "socent"]
 },
 {
     "id": "03_5",
@@ -76,7 +76,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["metadesign", "openp2pddd", "platforms"]
 },
 {
     "id": "03_6",
@@ -86,7 +86,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["metadesign", "openp2pddd", "platforms"]
 },
 {
     "id": "03_7",
@@ -96,7 +96,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["metadesign", "openp2pddd", "platforms"]
 },
 {
     "id": "04",
@@ -106,7 +106,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["metadesign", "processes", "platforms"]
+    "keywords": ["metadesign", "openp2pddd", "socinno"]
 },
 {
     "id": "05",
@@ -116,7 +116,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["makermovement"]
 },
 {
     "id": "06",
@@ -126,10 +126,10 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["makermovement"]
 },
 {
-    "id": "06_1",
+    "id": "06_3",
     "type": "Blog post",
     "bibtex": "2013d.bib",
     "year": "2013",
@@ -139,7 +139,7 @@
     "keywords": ["openp2pddd"]
 },
 {
-    "id": "06_2",
+    "id": "06_4",
     "type": "Blog post",
     "bibtex": "2013e.bib",
     "year": "2013",
@@ -149,7 +149,7 @@
     "keywords": ["openp2pddd"]
 },
 {
-    "id": "06_3",
+    "id": "06_5",
     "type": "Blog post",
     "bibtex": "2013f.bib",
     "year": "2013",
@@ -159,7 +159,7 @@
     "keywords": ["openp2pddd"]
 },
 {
-    "id": "06_4",
+    "id": "06_6",
     "type": "Blog post",
     "bibtex": "2013g.bib",
     "year": "2013",
@@ -169,49 +169,9 @@
     "keywords": ["openp2pddd"]
 },
 {
-    "id": "06_5",
-    "type": "Blog post",
-    "bibtex": "2013h.bib",
-    "year": "2013",
-    "description": "...",
-    "image": "",
-    "pdf": "",
-    "keywords": ["openp2pddd"]
-},
-{
-    "id": "06_6",
-    "type": "Blog post",
-    "bibtex": "2013i.bib",
-    "year": "2013",
-    "description": "...",
-    "image": "",
-    "pdf": "",
-    "keywords": ["openp2pddd"]
-},
-{
-    "id": "06_7",
+    "id": "06_8",
     "type": "Blog post",
     "bibtex": "2013l.bib",
-    "year": "2013",
-    "description": "...",
-    "image": "",
-    "pdf": "",
-    "keywords": ["openp2pddd"]
-},
-{
-    "id": "06_8",
-    "type": "Blog post",
-    "bibtex": "2013m.bib",
-    "year": "2013",
-    "description": "...",
-    "image": "",
-    "pdf": "",
-    "keywords": ["openp2pddd"]
-},
-{
-    "id": "06_8",
-    "type": "Blog post",
-    "bibtex": "2013n.bib",
     "year": "2013",
     "description": "...",
     "image": "",

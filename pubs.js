@@ -3,7 +3,7 @@ var previousYear = "2005";
 var yearSelection = "All years";
 var typeSelection = "All types";
 var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
-var pubsTypes = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Conference poster", "Blog post", "Magazine article", "Software"];
+var pubsTypes = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Blog post", "Magazine article", "Software"];
 
 d3.json("data/data.json")
     .then(data => {
@@ -121,7 +121,7 @@ d3.json("data/data.json")
             keywordFilter("impact");
         });
         $("#link_openp2pddd").click(function() {
-            keywordFilter("openp2pdddd");
+            keywordFilter("openp2pddd");
         });
         $("#link_local").click(function() {
             keywordFilter("local");
@@ -204,7 +204,6 @@ d3.json("data/data.json")
                 "Book chapter": 0,
                 "Thesis": 0,
                 "Report": 0,
-                "Conference poster": 0,
                 "Blog post": 0,
                 "Magazine article": 0,
                 "Software": 0
