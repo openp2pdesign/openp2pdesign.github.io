@@ -4,6 +4,8 @@ var yearSelection = "All years";
 var typeSelection = "All types";
 var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
 var pubsTypes = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Blog post", "Magazine article", "Software"];
+var pubsYearsChart = ["2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+var pubsTypesChart = ["Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Blog post", "Magazine article", "Software"];
 
 d3.json("data/data.json")
     .then(data => {
@@ -11,7 +13,6 @@ d3.json("data/data.json")
         var data2 = data;
         pubsPlot();
         pubsText();
-
 
         // Function for filtering publications by year and type
         function yearTypeFilter() {
@@ -251,34 +252,31 @@ d3.json("data/data.json")
                 "2020": 0
             }
 
-            // Remove the "all" values
-            pubsYears.shift();
-            pubsTypes.shift();
             // Create the structure of the pubsStats variable
             var pubsStats = []
-            for (i = 0; i < pubsYears.length; i++) {
-                for (j = 0; j < pubsTypes.length; j++) {
+            for (i = 0; i < pubsYearsChart.length; i++) {
+                for (j = 0; j < pubsTypesChart.length; j++) {
                     pubsStats.push({
-                        "year": pubsYears[i],
+                        "year": pubsYearsChart[i],
                         "articles": 0,
-                        "type": pubsTypes[j]
+                        "type": pubsTypesChart[j]
                     });
                 }
             }
             // Create the structure of the articlesCountStats variable
             var articlesCountStats = [];
-            for (i = 0; i < pubsTypes.length; i++) {
+            for (i = 0; i < pubsTypesChart.length; i++) {
                 articlesCountStats.push({
                     "articles": 0,
-                    "type": pubsTypes[i]
+                    "type": pubsTypesChart[i]
                 });
             }
             // Create the structure of the yearsCountStats variable
             var yearsCountStats = [];
-            for (i = 0; i < pubsYears.length; i++) {
+            for (i = 0; i < pubsYearsChart.length; i++) {
                 yearsCountStats.push({
                     "articles": 0,
-                    "year": pubsYears[i]
+                    "year": pubsYearsChart[i]
                 });
             }
 
