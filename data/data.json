@@ -136,7 +136,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["makermovement"]
 },
 {
     "id": "06_4",
@@ -146,7 +146,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["makermovement"]
 },
 {
     "id": "06_5",
@@ -156,7 +156,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["openp2pddd", "makermovement"]
 },
 {
     "id": "06_6",
@@ -166,7 +166,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["openp2pddd", "makermovement"]
 },
 {
     "id": "06_8",
@@ -176,7 +176,17 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["openp2pddd"]
+    "keywords": ["openp2pddd", "makermovement"]
+},
+{
+    "id": "06_8",
+    "type": "Blog post",
+    "bibtex": "2013m.bib",
+    "year": "2013",
+    "description": "...",
+    "image": "",
+    "pdf": "",
+    "keywords": ["openp2pddd", "makermovement"]
 },
 {
     "id": "07",
@@ -186,7 +196,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["openp2pddd", "makermovement"]
 },
 {
     "id": "08",
@@ -196,7 +206,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "09",
@@ -206,7 +216,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes"]
 },
 {
     "id": "10",
@@ -216,7 +226,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "11",
@@ -226,7 +236,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "12",
@@ -236,7 +246,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "13",
@@ -246,7 +256,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "14",
@@ -256,7 +266,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "15",
@@ -266,7 +276,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "16",
@@ -276,7 +286,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "17",
@@ -286,7 +296,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["openp2pddd"]
 },
 {
     "id": "18",
@@ -296,7 +306,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "19",
@@ -306,7 +316,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms","openp2pddd"]
 },
 {
     "id": "20",
@@ -316,7 +326,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms"]
 },
 {
     "id": "21",
@@ -326,7 +336,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "22",
@@ -336,7 +346,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "23",
@@ -346,7 +356,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "23_1",
@@ -356,7 +366,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","impact","processes","openp2pddd"]
 },
 {
     "id": "24",
@@ -366,7 +376,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "25",
@@ -376,7 +386,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms"]
 },
 {
     "id": "26",
@@ -386,7 +396,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms","processes","networks"]
 },
 {
     "id": "27",
@@ -396,7 +406,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","socent"]
 },
 {
     "id": "28",
@@ -406,7 +416,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms"]
 },
 {
     "id": "29",
@@ -416,7 +426,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["openp2pddd","processes","platforms","metadesign","makermovement"]
 },
 {
     "id": "30",
@@ -426,7 +436,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "31",
@@ -436,7 +446,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "32",
@@ -446,7 +456,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms"]
 },
 {
     "id": "32",
@@ -456,17 +466,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
-},
-{
-    "id": "33",
-    "type": "Software",
-    "bibtex": "2018b.bib",
-    "year": "2018",
-    "description": "...",
-    "image": "",
-    "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms"]
 },
 {
     "id": "34",
@@ -476,7 +476,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "35",
@@ -486,7 +486,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "36",
@@ -496,7 +496,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "36_1",
@@ -506,7 +506,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["openp2pddd"]
 },
 {
     "id": "36_2",
@@ -516,7 +516,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","platforms"]
 },
 {
     "id": "37",
@@ -526,7 +526,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement"]
 },
 {
     "id": "38",
@@ -536,7 +536,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms","socinno","socent","openp2pddd","impact"]
 },
 {
     "id": "39",
@@ -546,7 +546,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","openp2pddd"]
 },
 {
     "id": "40",
@@ -556,7 +556,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "41",
@@ -566,7 +566,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "42",
@@ -576,7 +576,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "43",
@@ -586,7 +586,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["metadesign","processes","platforms"]
 },
 {
     "id": "44",
@@ -596,7 +596,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms","socinno","socent","openp2pddd","impact"]
 },
 {
     "id": "45",
@@ -606,7 +606,7 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","platforms","socinno","socent","openp2pddd","impact"]
 },
 {
     "id": "46",
@@ -616,6 +616,6 @@
     "description": "...",
     "image": "",
     "pdf": "",
-    "keywords": ["..."]
+    "keywords": ["makermovement","processes"]
 }
 ]
