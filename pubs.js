@@ -195,7 +195,9 @@ d3.json("data/data.json")
                         }
                         pubDiv.append("p").html('<span class="normal-icons"><i class="fas fa-tags"></i> ' + keywordsTerms.join(', ') + '</span>');
                         // Add the description
-                        pubDiv.append("p").attr("class", "pub-description").html(item.description);
+                        if (item.description) {
+                            pubDiv.append("p").attr("class", "pub-description").html(item.description);
+                        }
                         // Button for downloading the publication
                         if (item.pdf) {
                             pubDiv.append('a').attr("href", "data/" + item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
