@@ -202,6 +202,10 @@ d3.json("data/data.json")
                         if (item.pdf) {
                             pubDiv.append('a').attr("href", "data/" + item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
                         }
+                        // Button for external link
+                        if (item.link) {
+                            pubDiv.append('a').attr("href", item.link).attr("target", "_blank").html('<button type="button" class="btn btn-primary">Link <i class="fas fa-external-link-alt"></i></button>');
+                        }
                         // Button for downloading the reference
                         pubDiv.append('a').attr("href", "data/" + item.bibtex).html('<button type="button" class="btn btn-primary">Reference file <i class="fas fa-download"></i></button>');
                         // Button for collapsible reference
