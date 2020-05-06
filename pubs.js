@@ -33,8 +33,9 @@ d3.json("data/data.json")
                 });
             }
             data2 = filtered;
-            previousYear = "2005"
+            previousYear = "2005";
             pubsPlot();
+            pubsText();
         }
 
         // Function for filtering publications by keyword
@@ -46,8 +47,9 @@ d3.json("data/data.json")
                 });
             });
             data2 = filtered;
-            previousYear = "2005"
+            previousYear = "2005";
             pubsPlot();
+            pubsText();
         }
 
         // Add a filter for years
@@ -134,12 +136,6 @@ d3.json("data/data.json")
             keywordFilter("sustainability");
         });
 
-        // Create a database of all publication
-        var library = [];
-        data.forEach(function(item) {
-            library.push(item.bibtex);
-        });
-
         function pubsText() {
             // Reset
             d3.select("#pubs").html("");
@@ -149,6 +145,7 @@ d3.json("data/data.json")
                 // load the bibtex
                 d3.text("data/" + item.bibtex)
                     .then(bibtex => {
+                        console.log(item);
                         thisYear = item.year;
                         let bibcontent = bibtex;
                         let example = new Cite(bibtex);
