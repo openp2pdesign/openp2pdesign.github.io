@@ -17,7 +17,6 @@ d3.json("data/data.json")
         // Function for filtering publications by year and type
         function yearTypeFilter() {
             if (yearSelection == "All years" && typeSelection == "All types") {
-                console.log("pi");
                 var filtered = data;
             } else if (yearSelection == "All years" && typeSelection !== "All types") {
                 var filtered = data.filter(function(d) {
@@ -145,7 +144,6 @@ d3.json("data/data.json")
                 // load the bibtex
                 d3.text("data/" + item.bibtex)
                     .then(bibtex => {
-                        console.log(item);
                         thisYear = item.year;
                         let bibcontent = bibtex;
                         let example = new Cite(bibtex);

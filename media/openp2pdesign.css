@@ -350,6 +350,10 @@ strong {
     height: 400px;
 }
 
+.csl-entry {
+    font-family: "Dosis" !important;
+}
+
 
 /* bibtex style */
 
