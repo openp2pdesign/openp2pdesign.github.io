@@ -51,6 +51,14 @@ d3.json("data/data.json")
             pubsText();
         }
 
+        // Reset filters
+        function resetFilter() {
+            data2 = data;
+            previousYear = "2005";
+            pubsPlot();
+            pubsText();
+        }
+
         // Add a filter for years
         var select = d3.select('#pubsfilter')
             .append('select')
@@ -133,6 +141,9 @@ d3.json("data/data.json")
         });
         $("#link_sustainability").click(function() {
             keywordFilter("sustainability");
+        });
+        $("#link_reset").click(function() {
+            resetFilter();
         });
 
         function pubsText() {
