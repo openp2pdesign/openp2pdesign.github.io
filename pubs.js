@@ -116,7 +116,7 @@ d3.json("data/data.json")
         $("#link_socent").click(function() {
             keywordFilter("socent");
         });
-        $("#makermovement").click(function() {
+        $("#link_makermovement").click(function() {
             keywordFilter("makermovement");
         });
         $("#link_impact").click(function() {
@@ -312,7 +312,8 @@ d3.json("data/data.json")
             statsText = "Massimo Menichinelli has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more."
             d3.select("#short-pubs-overview").html(statsText);
             // Overview 1
-            statsText = "Massimo Menichinelli has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more. This section contains a selection of the most relevant publications."
+            statsText = "Massimo Menichinelli has published several publications so far, including " + scientificArticles + " scientific articles, " + articlesCount["Book"] + " books, " + articlesCount["Book chapter"] + " chapters and more. This section contains a selection of the most relevant publications.";
+            d3.select("#pubsviztext").html("");
             d3.select("#pubsviztext").append("p").html(statsText);
             // Update the chart in the page with the stats of articles per year
             var vlSpec = {
