@@ -354,6 +354,14 @@ strong {
     font-family: "Dosis" !important;
 }
 
+div.csl-entry {
+    font-size: 1.15em;
+}
+
+.pubdiv span, .pubdiv span i {
+    color: #e3c2ab;
+}
+
 
 /* bibtex style */
 
