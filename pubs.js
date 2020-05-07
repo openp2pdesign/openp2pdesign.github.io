@@ -207,7 +207,7 @@ d3.json("data/data.json")
                         }
                         // Button for downloading the publication
                         if (item.pdf) {
-                            pubDiv.append('a').attr("href", "data/" + item.pdf).html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
+                            pubDiv.append('a').attr("href", "pdf/" + item.pdf).attr("target","_blank").html('<button type="button" class="btn btn-primary">Text <i class="fas fa-file-pdf"></i></button>');
                         }
                         // Button for external link
                         if (item.link) {
