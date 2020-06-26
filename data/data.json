@@ -359,7 +359,7 @@
         "image": "",
         "pdf": "",
         "link": "http://dx.doi.org/10.5281/zenodo.44882",
-        "keywords": ["makermovement", "platforms"]
+        "keywords": ["makermovement", "community", "platforms", "networks", "organization"]
     },
     {
         "id": "21",
@@ -679,5 +679,16 @@
         "pdf": "",
         "link": "https://doi.org/10.5281/zenodo.3598035",
         "keywords": ["makermovement", "processes", "community"]
+    },
+    {
+        "id": "47",
+        "type": "Journal article",
+        "bibtex": "2020c.bib",
+        "year": "2020",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://cpcl.unibo.it/article/view/9640",
+        "keywords": ["makermovement", "community", "platforms", "networks", "organization"]
     }
 ]
