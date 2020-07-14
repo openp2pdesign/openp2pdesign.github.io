@@ -690,5 +690,27 @@
         "pdf": "",
         "link": "https://cpcl.unibo.it/article/view/9640",
         "keywords": ["makermovement", "community", "platforms", "networks", "organizations"]
+    },
+    {
+        "id": "48",
+        "type": "Journal article",
+        "bibtex": "2020d.bib",
+        "year": "2020",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "http://revistas.unisinos.br/index.php/sdrj/article/view/sdrj.2020.131.07",
+        "keywords": ["makermovement", "community", "platforms", "impact",]
+    },
+    {
+        "id": "49",
+        "type": "Journal article",
+        "bibtex": "2020e.bib",
+        "year": "2020",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "http://revistas.unisinos.br/index.php/sdrj/article/view/sdrj.2020.131.01",
+        "keywords": ["makermovement", "community", "impact", "networks", "organizations"]
     }
 ]
