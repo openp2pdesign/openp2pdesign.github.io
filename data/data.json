@@ -712,5 +712,16 @@
         "pdf": "",
         "link": "http://revistas.unisinos.br/index.php/sdrj/article/view/sdrj.2020.131.01",
         "keywords": ["makermovement", "community", "impact", "networks", "organizations"]
+    },
+    {
+        "id": "50",
+        "type": "Book",
+        "bibtex": "2020f.bib",
+        "year": "2020",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://aaltodoc.aalto.fi/handle/123456789/47213",
+        "keywords": ["makermovement", "community", "metadesign", "networks", "openp2pddd", "processes", "platforms"]
     }
 ]
