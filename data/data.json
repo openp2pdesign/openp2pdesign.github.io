@@ -723,5 +723,16 @@
         "pdf": "",
         "link": "https://aaltodoc.aalto.fi/handle/123456789/47213",
         "keywords": ["makermovement", "community", "metadesign", "networks", "openp2pddd", "processes", "platforms"]
+    },
+    {
+        "id": "51",
+        "type": "Journal article",
+        "bibtex": "2021a.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "http://revistas.unisinos.br/index.php/sdrj/article/view/sdrj.2021.141.29",
+        "keywords": ["community", "metadesign", "platforms"]
     }
 ]
