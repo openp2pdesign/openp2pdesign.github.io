@@ -2,9 +2,9 @@
 var previousYear = "2005";
 var yearSelection = "All years";
 var typeSelection = "All types";
-var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+var pubsYears = ["All years", "2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 var pubsTypes = ["All types", "Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Blog post", "Magazine article", "Software"];
-var pubsYearsChart = ["2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+var pubsYearsChart = ["2006", "2007", "2008", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 var pubsTypesChart = ["Journal article", "Conference paper", "Book", "Book chapter", "Thesis", "Report", "Blog post", "Magazine article", "Software"];
 
 d3.json("data/data.json")
@@ -255,7 +255,12 @@ d3.json("data/data.json")
                 "2017": 0,
                 "2018": 0,
                 "2019": 0,
-                "2020": 0
+                "2020": 0,
+                "2021": 0,
+                "2022": 0,
+                "2023": 0,
+                "2024": 0,
+                "2025": 0
             }
 
             // Create the structure of the pubsStats variable
