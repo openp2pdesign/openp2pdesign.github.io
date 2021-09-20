@@ -734,5 +734,16 @@
         "pdf": "",
         "link": "http://revistas.unisinos.br/index.php/sdrj/article/view/sdrj.2021.141.29",
         "keywords": ["community", "metadesign", "platforms"]
+    },
+    {
+        "id": "52",
+        "type": "Conference paper",
+        "bibtex": "2021b.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://designascommongood.ch/",
+        "keywords": ["community", "openp2pddd", "processes", "networks"]
     }
 ]
