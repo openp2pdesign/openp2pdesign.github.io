@@ -745,5 +745,16 @@
         "pdf": "",
         "link": "https://designascommongood.ch/",
         "keywords": ["community", "openp2pddd", "processes", "networks"]
+    },
+    {
+        "id": "53",
+        "type": "Conference paper",
+        "bibtex": "2021c.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://cumulusroma2020.org/proceedings/",
+        "keywords": ["community", "openp2pddd", "metadesign", "makermovement", "platforms"]
     }
 ]
