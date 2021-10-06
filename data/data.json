@@ -756,5 +756,17 @@
         "pdf": "",
         "link": "https://cumulusroma2020.org/proceedings/",
         "keywords": ["community", "openp2pddd", "metadesign", "makermovement", "platforms"]
+    },
+    {
+        "id": "54",
+        "type": "Report",
+        "bibtex": "2021d.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.openinnotrain.eu/results/d1-1-executive-report-on-state-of-play-in-uic-and-research-translation-in-europe-and-australia/",
+        "keywords": ["processes", "networks", "impact"]
     }
+
 ]
