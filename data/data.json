@@ -767,6 +767,16 @@
         "pdf": "",
         "link": "https://www.openinnotrain.eu/results/d1-1-executive-report-on-state-of-play-in-uic-and-research-translation-in-europe-and-australia/",
         "keywords": ["processes", "networks", "impact"]
+    },
+    {
+        "id": "55",
+        "type": "Book",
+        "bibtex": "2021e.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.openinnotrain.eu/",
+        "keywords": ["processes", "networks", "impact"]
     }
-
 ]
