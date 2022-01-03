@@ -778,5 +778,16 @@
         "pdf": "",
         "link": "https://www.openinnotrain.eu/",
         "keywords": ["processes", "networks", "impact"]
+    },
+    {
+        "id": "56",
+        "type": "Book chapter",
+        "bibtex": "2021f.bib",
+        "year": "2021",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.openinnotrain.eu/",
+        "keywords": ["processes", "networks", "impact"]
     }
 ]
