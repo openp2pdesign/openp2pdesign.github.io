@@ -789,5 +789,16 @@
         "pdf": "",
         "link": "https://www.openinnotrain.eu/",
         "keywords": ["processes", "networks", "impact"]
+    },
+    {
+        "id": "57",
+        "type": "Journal article",
+        "bibtex": "2022a.bib",
+        "year": "2022",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.diid.it/diid/index.php/diid/article/view/diid76-menichinelli-gomez-marquez",
+        "keywords": ["processes", "networks", "makermovement", "community", "openp2pddd"]
     }
 ]
