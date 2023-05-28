@@ -88,6 +88,13 @@ html {
 	background-color: rgba(255,102,0,0.7);
 }
 
+.navbar-toggler-icon {
+    color: rgba(255,102,0,0.7) !important;
+}
+
+.navbar-brand strong {
+}
+
 body {
   /* Margin bottom by footer height + a 30px margin */
   margin-bottom: 40px;
