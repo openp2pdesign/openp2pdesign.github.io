@@ -337,7 +337,7 @@ d3.json("data/data.json")
                 "width": "container",
                 "height": 400,
                 "autosize": {
-                    "type": "fit-x",
+                    "type": "fit",
                     "resize": "true",
                     "contains": "content"
                 },
