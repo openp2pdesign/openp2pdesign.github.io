@@ -800,5 +800,27 @@
         "pdf": "",
         "link": "https://www.diid.it/diid/index.php/diid/article/view/diid76-menichinelli-gomez-marquez",
         "keywords": ["processes", "networks", "makermovement", "community", "openp2pddd"]
+    },
+    {
+        "id": "58",
+        "type": "Book chapter",
+        "bibtex": "2023a.bib",
+        "year": "2023",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://cgscholar.com/bookstore/works/from-the-spool-to-the-city?category_id=cgrn&path=cgrn%2F200%2F208",
+        "keywords": ["local", "impact", "makermovement", "community", "openp2pddd"]
+    },
+    {
+        "id": "59",
+        "type": "Book chapter",
+        "bibtex": "2023b.bib",
+        "year": "2023",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.e-elgar.com/shop/gbp/encyclopedia-of-social-innovation-9781800373341.html",
+        "keywords": ["socinno", "makermovement", "impact"]
     }
 ]
