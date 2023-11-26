@@ -822,5 +822,16 @@
         "pdf": "",
         "link": "https://www.e-elgar.com/shop/gbp/encyclopedia-of-social-innovation-9781800373341.html",
         "keywords": ["socinno", "makermovement", "impact"]
+    },
+    {
+        "id": "60",
+        "type": "Conference paper",
+        "bibtex": "2023c.bib",
+        "year": "2023",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.diid.it/diid/index.php/diid/issue/view/diid-dsi-1",
+        "keywords": ["more-than-human"]
     }
 ]

@@ -142,6 +142,9 @@ d3.json("data/data.json")
         $("#link_sustainability").click(function() {
             keywordFilter("sustainability");
         });
+        $("#link_morethanhuman").click(function() {
+            keywordFilter("more-than-human");
+        });
         $("#link_reset").click(function() {
             resetFilter();
         });
