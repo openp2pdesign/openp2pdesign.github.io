@@ -833,5 +833,27 @@
         "pdf": "",
         "link": "https://www.diid.it/diid/index.php/diid/issue/view/diid-dsi-1",
         "keywords": ["more-than-human"]
+    },
+    {
+        "id": "61",
+        "type": "Conference paper",
+        "bibtex": "2023d.bib",
+        "year": "2023",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://ecp.ep.liu.se/index.php/servdes/article/view/837",
+        "keywords": ["community", "networks"]
+    },
+    {
+        "id": "62",
+        "type": "Conference paper",
+        "bibtex": "2024a.bib",
+        "year": "2024",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003386858-27/semi-systematic-literature-review-design-open-source-agriculture-rocha-menichinelli-alvelos",
+        "keywords": ["openp2pddd", "community"]
     }
 ]
