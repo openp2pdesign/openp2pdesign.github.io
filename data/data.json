@@ -855,5 +855,17 @@
         "pdf": "",
         "link": "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003386858-27/semi-systematic-literature-review-design-open-source-agriculture-rocha-menichinelli-alvelos",
         "keywords": ["openp2pddd", "community"]
+    },
+    {
+        "id": "64",
+        "type": "Conference paper",
+        "bibtex": "2024b.bib",
+        "year": "2024",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://dl.designresearchsociety.org/drs-conference-papers/drs2024/researchpapers/176/",
+        "keywords": ["openp2pddd", "impact", "makermovement"]
     }
+
 ]
