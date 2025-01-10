@@ -857,7 +857,7 @@
         "keywords": ["openp2pddd", "community"]
     },
     {
-        "id": "64",
+        "id": "63",
         "type": "Conference paper",
         "bibtex": "2024b.bib",
         "year": "2024",
@@ -866,6 +866,28 @@
         "pdf": "",
         "link": "https://dl.designresearchsociety.org/drs-conference-papers/drs2024/researchpapers/176/",
         "keywords": ["openp2pddd", "impact", "makermovement"]
+    },
+    {
+        "id": "64",
+        "type": "Journal article",
+        "bibtex": "2024c.bib",
+        "year": "2024",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://doi.org/10.1080/14606925.2024.2405773",
+        "keywords": ["impact", "makermovement"]
+    },
+    {
+        "id": "65",
+        "type": "Journal article",
+        "bibtex": "2024d.bib",
+        "year": "2024",
+        "description": "",
+        "image": "",
+        "pdf": "",
+        "link": "https://doi.org/10.46467/TdD40.2024.156-175",
+        "keywords": ["platforms", "more-than-human"]
     }
 
 ]
